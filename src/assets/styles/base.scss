@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: inherit;
+}
+
+:focus {
+  outline: none;
+}
+
+::-moz-focus-inner {
+  border: none;
+}
+
+::placeholder {
+  font: 400 16px/1.4 'Inter', sans-serif;
+  font-size: 16px;
+  color: $black;
+  letter-spacing: 0.05em;
+
+  @media(max-width: 400px) {
+    font-size: 14px;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+input{
+  border: 0;
+  outline: 0;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+html {
+  font: 400 16px/1.4 'Inter', sans-serif;
+  color: $gray;
+  letter-spacing: 0.03em;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+hr {
+  border-top: 0;
+  border-color: #8c8c8c;
+}
+
+a {
+  color: #00a2ff;;
+  cursor: default;
+}
+
+a[href] {
+  cursor: pointer;
+}
+
+p {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+textarea {
+  resize: none;
+}
+
+address {
+  font-style: normal;
+}
+
+button {
+  outline: none;
+  border: 0;
+  cursor: pointer;
+  transition: $delay;
+}
+
+h1, .h1 {
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 1.2;
+  letter-spacing: 0.05em;
+  color: $black;
+  padding-bottom: 63px;
+
+  @media(max-width: 1365px) {
+    padding-bottom: 50px;
+  }
+
+  @media(max-width: 991px) {
+    padding-bottom: 30px;
+  }
+}

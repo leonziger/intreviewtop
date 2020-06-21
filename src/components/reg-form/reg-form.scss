@@ -1,0 +1,165 @@
+.reg-form {
+  &__error-message {
+    color: $blue;
+    font-size: 14px;
+    display: block;
+    padding: 0 10px;
+    margin-bottom: 5px;
+
+    @media(max-width: 575px) {
+      font-size: 12px;
+      padding: 0;
+      text-align: center;
+    }
+  }
+
+  &__field {
+    height: 40px;
+    border: 1px solid #E6ECF5;
+    box-sizing: border-box;
+    border-radius: 2px;
+    width: 100%;
+    letter-spacing: 0.05em;
+    padding: 11px 14px 9px;
+    z-index: 0;
+
+    &-label {
+      font-size: 10px;
+      line-height: 1.2;
+      letter-spacing: 0.05em;
+      color: $black;
+      position: absolute;
+      left: 10px;
+      top: -6px;
+      padding: 0 5px;
+      background-color: #fff;
+      z-index: 2;
+    }
+
+    &-wrap {
+      margin-bottom: 37px;
+      position: relative;
+
+      @media(max-width: 575px) {
+        margin-bottom: 25px;
+      }
+    }
+
+    &-error {
+      border: 2px solid $blue;
+    }
+
+    &-valid {
+      border: 1px solid #E6ECF5;
+    }
+  }
+
+  &__checkboxes {
+    margin-top: -3px;
+    margin-bottom: 36px;
+  }
+
+  &__checkbox {
+    display: block;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.05em;
+    color: $black;
+    margin-bottom: 8px;
+
+    &_bold {
+      font-weight: 600;
+    }
+  }
+
+  &__notice {
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.05em;
+    margin-bottom: 44px;
+
+    &-link {
+      color: $blue;
+    }
+  }
+
+  &__social {
+    &-notice {
+      color: #000;
+      text-align: center;
+      letter-spacing: 0.05em;
+      margin-bottom: 24px;
+    }
+
+    &-links {
+      display: flex;
+      justify-content: space-between;
+
+
+      @media(max-width: 479px) {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    }
+
+    &-name {
+      padding-right: 5px;
+    }
+
+    &-link {
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      line-height: 1.4;
+      letter-spacing: 0.05em;
+      color: $blue;
+      background: #fff;
+      border: 1px solid $blue;
+      border-radius: 2px;
+      padding: 13px 48px;
+      transition: $delay;
+
+      @media(max-width: 479px) {
+        padding: 10px 30px;
+        width: 100%;
+        margin-bottom: 20px;
+      }
+      
+      &:hover {
+        background: $blue;
+        color: #fff;
+
+        svg {
+          fill: #fff;
+        }
+      }
+
+      &.linkedin {
+        padding: 13px 48px 13px 43px;
+
+        @media(max-width: 479px) {
+          padding: 10px 30px;
+          width: 100%;
+        }
+
+        .social-link {
+          margin-top: -3px;
+          margin-right: -5px;
+        }
+      }
+    }
+  }
+
+  &__submit {
+    margin: 0 auto 24px;
+    width: 100%;
+  }
+
+  .social-link {
+    width: 15px;
+    height: 15px;
+    fill: $blue;
+  }
+}

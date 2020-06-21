@@ -1,0 +1,12 @@
+.registration {
+  max-width: 512px;
+  margin: 0 auto;
+
+  @media(max-width: 575px) {
+    padding: 30px;
+  }
+
+  &__title {
+    text-align: center;
+  }
+}

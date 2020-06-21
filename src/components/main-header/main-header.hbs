@@ -1,0 +1,27 @@
+<header class="main-header">
+    <div class="container main-header__container">
+        <div class="main-header__menu-toggle">
+            {{> menu-toggle }}
+        </div>
+        <a href="/" class="main-header__logo">InterviewTop</a>
+        <div class="main-header__nav main-menu">
+            {{> nav }}
+        </div>
+        <div class="main-header__user logged">
+            <a href="./auth.html" class="main-header__user-auth">
+                Увiйти
+            </a>
+            <a href="./notices.html" class="main-header__user-notices">
+                {{> icon iconName="notice_active" classNames="notice" }}
+            </a>
+            <a href="./profile.html" class="main-header__user-icon">
+                <div class="main-header__user-inner"></div>
+            </a>
+            <a href="#" class="main-header__user-menu user-menu">
+                {{> icon iconName="verticalburger" classNames="notice" }}
+            </a>
+        </div>
+    </div>
+</header>
+
+

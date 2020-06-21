@@ -1,0 +1,38 @@
+<form action="" class="reg-form">
+    <div class="reg-form__field-wrap">
+        <label for="reg-email" class="reg-form__field-label">E-mail</label>
+        <input type="email" placeholder="RandomEmail@gmail.com" name="email" id="reg-email" class="reg-form__field" autocomplete="off">
+    </div>
+    <div class="reg-form__field-wrap">
+        <input type="password" placeholder="Пароль" name="password" class="reg-form__field">
+    </div>
+    <div class="reg-form__checkboxes">
+        <label for="candidate" class="reg-form__checkbox">
+            <input name="role" type="radio" id="candidate" value="candidate">
+            <span class="reg-form__checkbox_bold">Я кандидат</span> - шукаю пропозицiї
+        </label>
+        <label for="recruter" class="reg-form__checkbox">
+            <input name="role" type="radio" id="recruter" value="recruter">
+            <span class="reg-form__checkbox_bold">Я рекрутер</span> - шукаю розробникiв
+        </label>
+        <label for="interviewer" class="reg-form__checkbox">
+            <input name="role" type="radio" id="interviewer" value="interviewer" checked>
+            <span class="reg-form__checkbox_bold">Я iнтерв'юер</span> - проводжу спiвбесiди
+        </label>
+    </div>
+    <div class="reg-form__notice">Ви приймаєте <a href="./terms.html" class="reg-form__notice-link">правила сайту</a> та <a href="./privacy.html" class="reg-form__notice-link">політику конфіденційності</a></div>
+    <button type="submit" class="the-button reg-form__submit">Зареєструватися</button>
+    <div class="reg-form__social">
+        <div class="reg-form__notice reg-form__social-notice">Або увiйти за допомогою</div>
+        <div class="reg-form__social-links">
+            <button class="reg-form__social-link">
+                <div class="reg-form__social-name">Google</div>
+                {{> icon iconName="google" classNames="social-link" }}
+            </button>
+            <button class="reg-form__social-link linkedin">
+                <div class="reg-form__social-name">LinkedIn</div>
+                {{> icon iconName="linkedin" classNames="social-link" }}
+            </button>
+        </div>
+    </div>
+</form>
