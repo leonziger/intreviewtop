@@ -1,14 +1,30 @@
 .dashboard {
   &__content {
     padding: 100px 0;
+
+    @media(max-width: 991px) {
+      padding: 80px 0;
+    }
+
+    @media(max-width: 575px) {
+      padding: 50px 0;
+    }
   }
 
   &__section {
     margin-bottom: 98px;
+
+    @media(max-width: 991px) {
+      margin-bottom: 50px;
+    }
   }
 
   &__container {
     padding: 26px 32px 20px;
+
+    @media(max-width: 575px) {
+      padding: 20px;
+    }
   }
 }
 
@@ -19,6 +35,12 @@
     justify-content: space-between;
     align-items: flex-end;
     margin-bottom: 22px;
+
+    @media(max-width: 575px) {
+     flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 18px;
+    }
   }
 
   &__name {
@@ -27,9 +49,14 @@
     line-height: 1.2;
     letter-spacing: 0.05em;
     color: $blue;
+
+    @media(max-width: 575px) {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
   }
 
-  &__registration-date {
+  &__date {
     font-weight: 400;
     font-size: 12px;
     line-height: 1.25;
@@ -39,6 +66,11 @@
 
   &__items {
     display: flex;
+    flex-wrap: wrap;
+
+    @media(max-width: 575px) {
+      flex-direction: column;
+    }
   }
 
   &__item {
@@ -48,6 +80,12 @@
     letter-spacing: 0.05em;
     color: $black;
     padding-right: 79px;
+
+    @media(max-width: 575px) {
+      padding-right: 0;
+      font-size: 14px;
+      line-height: 1.2;
+    }
 
     &-line {
       display: flex;
@@ -69,6 +107,12 @@
   align-items: center;
   padding: 15px 0 14px;
   border-bottom: 1px solid #E6ECF5;
+  position: relative;
+
+  @media(max-width: 991px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
   &:last-child {
     border-bottom: none;
@@ -78,6 +122,11 @@
     display: flex;
     flex-direction: column;
     width: 170px;
+
+    @media(max-width: 991px) {
+      width: 100%;
+      margin-bottom: 10px;
+    }
   }
 
   &__title {
@@ -87,6 +136,10 @@
     letter-spacing: 0.05em;
     color: $blue;
     padding-bottom: 7px;
+
+    @media(max-width: 575px) {
+      font-size: 14px;
+    }
   }
 
   &__date {
@@ -104,6 +157,20 @@
     letter-spacing: 0.05em;
     color: $black;
     width: 563px;
+
+    @media(max-width: 1099px) {
+      width: 100%;
+      max-width: 500px;
+    }
+
+    @media(max-width: 991px) {
+      margin-bottom: 10px;
+      max-width: 900px;
+    }
+
+    @media(max-width: 575px) {
+      font-size: 14px;
+    }
   }
 
   &__contact {
@@ -115,6 +182,14 @@
     display: flex;
     align-items: center;
     width: 215px;
+
+    @media(max-width: 991px) {
+      width: 100%;
+    }
+
+    @media(max-width: 575px) {
+      font-size: 14px;
+    }
 
     &:before {
       display: block;
@@ -136,13 +211,371 @@
 
   &__menu {
     padding-top: 6px;
+    position: absolute;
+    right: 2px;
+    top: 20px;;
+
+    @media(max-width: 991px) {
+      top: 10px;
+      right: 0;
+    }
   }
 
+}
+
+.vacancy {
+  &__line {
+    &-first {
+      align-items: center;
+
+      @media(max-width: 575px) {
+        align-items: flex-start;
+      }
+    }
+
+    &-second {
+      margin-bottom: 13px;
+
+      @media(max-width: 575px) {
+        margin-bottom: 10px;
+      }
+    }
+
+    &-third {
+      margin-bottom: 2px;
+    }
+  }
+
+  &__date {
+    margin-right: -3px;
+  }
+
+  &__experience {
+    display: flex;
+
+    @media(max-width: 767px) {
+      flex-direction: column;
+    }
+
+    .candidate__item-line {
+      padding-right: 28px;
+
+      @media(max-width: 767px) {
+        margin-bottom: 10px;
+        padding-right: 0;
+      }
+
+      @media(max-width: 575px) {
+        font-size: 14px;
+        line-height: 1.2;
+      }
+    }
+  }
+
+  &__salary-location {
+    display: flex;
+
+    @media(max-width: 575px) {
+      align-items: center;
+    }
+  }
+
+  &__salary {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.4;
+    letter-spacing: 0.05em;
+    color: $black;
+    padding-right: 25px;
+
+    @media(max-width: 575px) {
+      font-size: 14px;
+      line-height: 1.2;
+    }
+  }
+
+  &__location {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.4;
+    letter-spacing: 0.05em;
+    color: $black;
+    display: flex;
+    align-items: center;
+
+    @media(max-width: 575px) {
+      font-size: 14px;
+      line-height: 1.2;
+    }
+
+    &:before {
+      content: '';
+      width: 14px;
+      height: 18px;
+      display: block;
+      background-image: url(../images/marker.svg);
+      margin-right: 5px;
+      margin-top: 1px;
+    }
+  }
+
+  &__description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.4;
+    letter-spacing: 0.03em;
+    color: $gray;
+    max-width: 580px;
+    margin-bottom: 28px;
+
+    @media(max-width: 575px) {
+      font-size: 14px;
+      line-height: 1.2;
+      margin-bottom: 18px;
+    }
+  }
+
+  &__tags {
+    display: flex;
+    margin-bottom: 24px;
+  }
+
+  &__tag {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.05em;
+    color: $gray;
+    border: 1px solid $gray;
+    border-radius: 2px;
+    padding: 4px 8px;
+    margin-right: 7px;
+  }
+
+  &__contact {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.4;
+    letter-spacing: 0.05em;
+    color: $black;
+    margin-bottom: 15px;
+
+    @media(max-width: 575px) {
+      font-size: 14px;
+      line-height: 1.2;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__recruiter {
+    color: $blue;
+  }
+
+  &__company {
+    font-weight: 600;
+  }
+}
+
+.interview {
+  margin-bottom: 16px;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+
+    @media(max-width: 767px) {
+      flex-direction: column;
+    }
+  }
+
+  &__line {
+    &-first {
+      margin-bottom: 21px;
+
+      @media(max-width: 575px) {
+        margin-bottom: 10px;
+      }
+    }
+    &-second {
+      display: flex;
+      margin-bottom: 17px;
+
+      @media(max-width: 575px) {
+        margin-bottom: 10px;
+        font-size: 14px;
+        line-height: 1.2;
+      }
+    }
+  }
+
+  &__candidate {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.4;
+    letter-spacing: 0.05em;
+    color: $black;
+
+    @media(max-width: 575px) {
+      font-size: 14px;
+      line-height: 1.2;
+    }
+  }
+
+  &__position {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.4;
+    letter-spacing: 0.05em;
+    color: $black;
+
+    @media(max-width: 575px) {
+      font-size: 14px;
+      line-height: 1.2;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__date {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.4;
+    letter-spacing: 0.07em;
+    color: $black;
+    display: flex;
+    align-items: center;
+
+    @media(max-width: 575px) {
+      font-size: 14px;
+      line-height: 1.2;
+      margin-bottom: 10px;
+    }
+
+    &:before {
+      content: '';
+      width: 16px;
+      height: 16px;
+      display: block;
+      background-image: url(../images/calendar.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      margin-right: 6px;
+    }
+  }
+
+  &__time {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.4;
+    letter-spacing: 0.07em;
+    color: $black;
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+
+    @media(max-width: 575px) {
+      font-size: 14px;
+      line-height: 1.2;
+      margin-bottom: 10px;
+    }
+
+    &:before {
+      content: '';
+      width: 16px;
+      height: 16px;
+      display: block;
+      background-image: url(../images/clock.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      margin-right: 6px;
+    }
+
+  }
+
+  &__company {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.4;
+    letter-spacing: 0.07em;
+    color: $black;
+    margin-bottom: 7px;
+
+    @media(max-width: 575px) {
+      font-size: 14px;
+      line-height: 1.2;
+    }
+  }
+
+  &__person {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.05em;
+    color: $lightblack;
+    margin-bottom: 7px;
+  }
+
+  &__buttons {
+    margin-top: 4px;
+    margin-right: 5px;
+
+    @media(max-width: 767px) {
+      margin-top: 10px;
+      margin-right: 0;
+      justify-content: space-between;
+      display: flex;
+    }
+
+    @media(max-width: 575px) {
+      flex-direction: column;
+      justify-content: center;
+      margin: 20px auto 0;
+    }
+
+  }
+
+  &__button {
+    &-video {
+      width: 246px;
+      padding: 14px;
+      margin-bottom: 20px;
+
+      @media(max-width: 767px) {
+        font-size: 14px;
+        line-height: 1.2;
+        width: 220px;
+      }
+    }
+
+    &-feedback {
+      width: 246px;
+      padding: 13px;
+      border: 1px solid $blue;
+      background-color: #fff;
+      color: $blue;
+      box-shadow: none;
+
+      &:hover {
+        color: #fff;
+      }
+
+      @media(max-width: 767px) {
+        margin-bottom: 20px;
+        font-size: 14px;
+        line-height: 1.2;
+        width: 220px;
+      }
+    }
+  }
 }
 
 .sent-offers {
   .dashboard__container {
     padding: 5px 33px 12px;
+
+    @media(max-width: 575px) {
+      padding: 5px 20px 12px;
+    }
+
   }
 }
 

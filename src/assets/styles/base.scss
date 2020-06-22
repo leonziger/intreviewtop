@@ -122,4 +122,13 @@ h2, .h2 {
   letter-spacing: 0.05em;
   color: $black;
   padding-bottom: 30px;
+
+  @media (max-width: 991px) {
+    font-size: 22px;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 20px;
+  }
+
 }
