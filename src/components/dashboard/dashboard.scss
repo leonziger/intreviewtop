@@ -234,6 +234,8 @@
     }
 
     &-second {
+      display: flex;
+      justify-content: space-between;
       margin-bottom: 13px;
 
       @media(max-width: 575px) {
