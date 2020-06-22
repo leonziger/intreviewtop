@@ -114,3 +114,12 @@ h1, .h1 {
     padding-bottom: 30px;
   }
 }
+
+h2, .h2 {
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 1.2;
+  letter-spacing: 0.05em;
+  color: $black;
+  padding-bottom: 30px;
+}

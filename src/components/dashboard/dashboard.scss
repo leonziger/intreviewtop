@@ -1,0 +1,152 @@
+.dashboard {
+  &__content {
+    padding: 100px 0;
+  }
+
+  &__section {
+    margin-bottom: 98px;
+  }
+
+  &__container {
+    padding: 26px 32px 20px;
+  }
+}
+
+.candidate {
+
+  &__first-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 22px;
+  }
+
+  &__name {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.05em;
+    color: $blue;
+  }
+
+  &__registration-date {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.05em;
+    color: $lightgray;
+  }
+
+  &__items {
+    display: flex;
+  }
+
+  &__item {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.4;
+    letter-spacing: 0.05em;
+    color: $black;
+    padding-right: 79px;
+
+    &-line {
+      display: flex;
+      margin-bottom: 17px;
+    }
+
+    &-name {
+      padding-right: 6px;
+    }
+
+    &-value {
+      font-weight: 600;
+    }
+  }
+}
+
+.offer {
+  display: flex;
+  align-items: center;
+  padding: 15px 0 14px;
+  border-bottom: 1px solid #E6ECF5;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  &__intro {
+    display: flex;
+    flex-direction: column;
+    width: 170px;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.4;
+    letter-spacing: 0.05em;
+    color: $blue;
+    padding-bottom: 7px;
+  }
+
+  &__date {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.05em;
+    color: $lightblack;
+  }
+
+  &__description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.4;
+    letter-spacing: 0.05em;
+    color: $black;
+    width: 563px;
+  }
+
+  &__contact {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.4;
+    letter-spacing: 0.05em;
+    color: $lightgray;
+    display: flex;
+    align-items: center;
+    width: 215px;
+
+    &:before {
+      display: block;
+      content: '';
+      width: 20px;
+      height: 20px;
+      background-image: url(../images/contact-waiting.svg);
+      margin-right: 12px;
+    }
+
+    &_opened {
+      color: #18D1A5;
+
+      &:before {
+        background-image: url(../images/contact-opened.svg);
+      }
+    }
+  }
+
+  &__menu {
+    padding-top: 6px;
+  }
+
+}
+
+.sent-offers {
+  .dashboard__container {
+    padding: 5px 33px 12px;
+  }
+}
+
+.offer-menu {
+  width: 24px;
+  height: 24px;
+}
