@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "author": "Leonid Zichkov",
   "private": true,
-  "homepage": "https://leonziger.github.io/interviewtop",
+  "homepage": "https://leonziger.github.io/intreviewtop",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/leonziger/interviewtop.git"
@@ -47,6 +47,7 @@
     "gulp-htmlmin": "^5.0.1",
     "jquery": "^3.3.1",
     "jquery-validation": "^1.19.2",
+    "slick-carousel": "^1.8.1",
     "vanilla-text-mask": "^5.1.1",
     "vex-js": "^4.1.0"
   }

@@ -1,0 +1,13 @@
+.search-candidate {
+  &__content {
+    padding: 55px 0 92px;
+
+    @media(max-width: 991px) {
+      padding: 55px 0 80px;
+    }
+
+    @media(max-width: 575px) {
+      padding: 50px 0;
+    }
+  }
+}

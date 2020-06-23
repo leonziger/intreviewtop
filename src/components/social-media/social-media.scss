@@ -1,0 +1,30 @@
+.social-media{
+  display: flex;
+
+  &__item {
+    margin: 0 8px;
+
+    svg {
+      fill: $blue;
+    }
+    
+    &:hover {
+      svg {
+        fill: darken($blue,10%);
+      }
+    }
+  }
+}
+
+.telegram {
+  width: 12px;
+  height: 11px;
+}
+.linkedin {
+  width: 12px;
+  height: 12px;
+}
+.github {
+  width: 13px;
+  height: 12px;
+}

@@ -65,8 +65,13 @@ hr {
 }
 
 a {
-  color: #00a2ff;;
+  color: $blue;;
   cursor: default;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 a[href] {
@@ -98,23 +103,7 @@ button {
   transition: $delay;
 }
 
-h1, .h1 {
-  font-weight: 600;
-  font-size: 25px;
-  line-height: 1.2;
-  letter-spacing: 0.05em;
-  color: $black;
-  padding-bottom: 63px;
-
-  @media(max-width: 1365px) {
-    padding-bottom: 50px;
-  }
-
-  @media(max-width: 991px) {
-    padding-bottom: 30px;
-  }
-}
-
+h1, .h1,
 h2, .h2 {
   font-weight: 600;
   font-size: 25px;
@@ -131,4 +120,46 @@ h2, .h2 {
     font-size: 20px;
   }
 
+}
+
+.base {
+  &__title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.05em;
+
+    @media(max-width: 575px) {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__subtitle {
+    padding-bottom: 7px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.4;
+    letter-spacing: 0.05em;
+    color: $blue;
+
+    @media(max-width: 575px) {
+      font-size: 14px;
+    }
+  }
+
+  &__notes {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.05em;
+  }
+}
+
+.breadcrumbs {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.05em;
+  margin-bottom: 30px;
 }

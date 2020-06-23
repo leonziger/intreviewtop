@@ -7,3 +7,15 @@
   margin-right: auto;
   //outline: 1px solid white;
 }
+
+.inner-container {
+  &__big {
+    max-width: 776px;
+    width: 100%;
+  }
+
+  &__small {
+    max-width: 248px;
+    width: 100%;
+  }
+}
