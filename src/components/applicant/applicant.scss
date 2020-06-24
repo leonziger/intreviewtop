@@ -230,7 +230,6 @@
 
   &__wrap {
     @media(max-width: 1099px) {
-      margin-left: 30px;
     }
   }
 
@@ -321,6 +320,10 @@
   &:hover {
     text-decoration: none;
     opacity: 0.7;
+  }
+
+  @media(max-width: 1099px) {
+    margin: 0 auto;
   }
 
   &__position {
