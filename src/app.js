@@ -34,13 +34,13 @@ moreApplicantsSlides.slick({
 
   responsive: [
     {
-      breakpoint: 872,
+      breakpoint: 840,
       settings: {
         slidesToShow: 2,
       }
     },
     {
-      breakpoint: 768,
+      breakpoint: 576,
       settings: {
         slidesToShow: 1,
       }
