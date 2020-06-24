@@ -172,6 +172,7 @@
       padding: 42px 25px 0 42px;
       width: 423px;
       height: 350px;
+      overflow-y: scroll;
 
       @media(max-width: 1099px) {
         width: 100%;
@@ -208,9 +209,10 @@
     }
 
     &-text {
+      letter-spacing: 0.02em;
+
       @media(max-width: 1099px) {
         padding-right: 15px;
-        letter-spacing: 0.02em;
       }
     }
 
@@ -221,17 +223,58 @@
 }
 
 .more-applicants {
-  //display: none;
-
     &__title {
       color: #1A1E38;
       margin-bottom: 9px;
     }
 
+  &__wrap {
+    @media(max-width: 1099px) {
+      margin-left: 30px;
+    }
+  }
+
   &__slides {
     display: flex;
     justify-content: space-between;
-    width: 100%;
+
+  .slick {
+    &-prev {
+      left: unset;
+      right: 56px;
+      top: -25px;
+      border-radius: 50%;
+      background: #fff;
+      width: 24px;
+      height: 24px;
+      background-image: url(../images/left-arrow.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+
+      &:hover {
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0.04), 0 2px 6px rgba(91, 92, 238, 0.06), 0 15px 30px rgba(91, 92, 238, 0.15);
+        background-image: url(../images/right-arrow_blue.svg);
+      }
+    }
+
+    &-next {
+      left: unset;
+      right: 20px;
+      top: -25px;
+      border-radius: 50%;
+      background: #fff;
+      width: 24px;
+      height: 24px;
+      background-image: url(../images/righ-arrow.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+
+      &:hover {
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0.04), 0 2px 6px rgba(91, 92, 238, 0.06), 0 15px 30px rgba(91, 92, 238, 0.15);
+        background-image: url(../images/right-arrow_blue.svg);
+      }
+    }
+  }
   }
 }
 
@@ -287,7 +330,7 @@
   &__location {
     margin-bottom: 9px;
   }
-  &__salsry {
+  &__salary {
     font-weight: 600;
   }
 

@@ -1,7 +1,6 @@
 @import '../../../../node_modules/slick-carousel/slick/slick.scss';
 @import '../../../../node_modules/slick-carousel/slick/slick-theme.scss';
 
-
 .slick-dots {
   width: auto;
 }
@@ -15,7 +14,7 @@
 .slick-prev,
 .slick-next {
   &:before {
-    font-family: 'Open Sans', sans-serif;
+    content: '';
   }
 }
 
@@ -31,7 +30,7 @@
 
 .slick-list {
   .slick-loading & {
-    background: #fff slick-image-url("./../images/ajax-loader.gif") center center no-repeat;
+    background: #fff slick-image-url("./../images/ajax-loader.gif") center no-repeat;
   }
 }
 

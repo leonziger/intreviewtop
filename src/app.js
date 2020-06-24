@@ -1,22 +1,31 @@
 window.$ = window.jQuery = require('jquery');
+import 'jquery.nicescroll';
 import 'slick-carousel';
 
 import './components/main-header/main-header';
 import './components/menu-toggle/menu-toggle';
 import './components/reg-form/reg-form';
 
-$('.more-info').click(function() {
-  console.log('.more-info clicked');
-  $('.more-info').toggleClass('active');
+const moreInfo = $('.more-info');
+const moreApplicantsSlides = $('.more-applicants__slides');
+const candidateItemBlocks = $('.candidate__item-blocks');
+const applicantAnswersWrap = $('.applicant__answers-wrap');
 
-  if ($('.more-info').hasClass('active')) {
-    $('.candidate__item-blocks').slideDown();
-  } else {
-    $('.candidate__item-blocks').slideUp();
+moreInfo.click(function() {
+  moreInfo.toggleClass('active');
+
+  if (moreInfo.hasClass('active')) {
+    candidateItemBlocks.slideDown(function(){
+      applicantAnswersWrap.getNiceScroll().resize();
+    });
+      } else {
+    candidateItemBlocks.slideUp(function() {
+      applicantAnswersWrap.getNiceScroll().resize();
+    });
   }
 });
 
-$('.more-applicants__slides').slick({
+moreApplicantsSlides.slick({
   dots: false,
   arrows: true,
   infinite: false,
@@ -25,11 +34,24 @@ $('.more-applicants__slides').slick({
 
   responsive: [
     {
-      // breakpoint: 1099,
-      // settings: {
-      //   slidesToShow: 4,
-      //   slidesToScroll: 1,
-      // }
+      breakpoint: 872,
+      settings: {
+        slidesToShow: 2,
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+      }
     }
   ]
 });
+
+applicantAnswersWrap.niceScroll(
+  {
+    cursorcolor:"#5B5CEE",
+    cursorwidth:"8px",
+    cursorborderradius:0
+  }
+);
