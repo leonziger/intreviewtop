@@ -15,7 +15,7 @@
 ::placeholder {
   font: 400 16px/1.4 'Inter', sans-serif;
   font-size: 16px;
-  color: $black;
+  color: #A9A9CA;
   letter-spacing: 0.05em;
 
   @media(max-width: 400px) {
@@ -162,4 +162,8 @@ h2, .h2 {
   line-height: 1.25;
   letter-spacing: 0.05em;
   margin-bottom: 30px;
+}
+
+.bold {
+  font-weight: 600;
 }

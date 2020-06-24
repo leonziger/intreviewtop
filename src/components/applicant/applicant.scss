@@ -1,3 +1,74 @@
+.search-candidates-list {
+  .applicant {
+    .dashboard__container {
+      padding: 26px 32px 23px;
+      margin-bottom: 17px;
+    }
+  }
+}
+
+.applicants {
+
+  &__search {
+
+    &-form {
+      margin-bottom: 14px;
+
+      .dashboard__container {
+        padding: 26px 32px 22px;
+      }
+    }
+
+    &-results {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.4;
+      letter-spacing: 0.05em;
+      color: $black;
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 67px 21px 32px;
+
+      @media (max-width: 575px) {
+        padding: 20px 35px 21px 0;
+        font-size: 14px;
+        line-height: 1.2;
+      }
+
+      @media (max-width: 399px) {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+    &-control {
+      position: relative;
+
+      @media (max-width: 399px) {
+        margin-top: 10px;
+        margin-left: -25px;
+      }
+
+      &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        right: -32px;
+        top: 1px;
+        width: 20px;
+        height: 20px;
+        background-image: url(../images/tales.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+
+        @media (max-width: 575px) {
+          top: -3px;
+        }
+      }
+    }
+  }
+}
+
 .applicant {
   .dashboard__container {
     margin-bottom: 34px;
@@ -27,7 +98,7 @@
   }
 
   &__info {
-    margin-right: 10px;
+    //margin-right: 10px;
 
     @media(max-width: 1099px) {
       max-width: 100%;
@@ -357,4 +428,10 @@
     width: 100%;
     height: auto;
   }
+}
+
+.star {
+  width: 16px;
+  height: 16px;
+  display: block;
 }

@@ -8,19 +8,24 @@ import './components/reg-form/reg-form';
 
 const moreInfo = $('.more-info');
 const moreApplicantsSlides = $('.more-applicants__slides');
-const candidateItemBlocks = $('.candidate__item-blocks');
 const applicantAnswersWrap = $('.applicant__answers-wrap');
 
-moreInfo.click(function() {
-  moreInfo.toggleClass('active');
+moreInfo.click(function(e) {
+  const candidateItemBlocks = $(this).parent().siblings('.candidate__item-blocks');
 
-  if (moreInfo.hasClass('active')) {
+  $(this).toggleClass('active');
+
+  if ($(this).hasClass('active')) {
     candidateItemBlocks.slideDown(function(){
-      applicantAnswersWrap.getNiceScroll().resize();
+      if (applicantAnswersWrap) {
+        applicantAnswersWrap.getNiceScroll().resize();
+      }
     });
       } else {
     candidateItemBlocks.slideUp(function() {
-      applicantAnswersWrap.getNiceScroll().resize();
+      if (applicantAnswersWrap) {
+        applicantAnswersWrap.getNiceScroll().resize();
+      }
     });
   }
 });
