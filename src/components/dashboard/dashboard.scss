@@ -79,11 +79,19 @@
     &-rating {
       display: flex;
       align-items: center;
+
+      @media(max-width: 575px) {
+        align-items: flex-start;
+      }
     }
   }
 
   &__rating {
     margin-left: 10px;
+
+    @media(max-width: 575px) {
+      padding-top: 2px;
+    }
   }
 
   &__date {
