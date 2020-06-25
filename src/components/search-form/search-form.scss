@@ -98,12 +98,13 @@
   }
 
   &__select {
+    background-color: #fff;
     line-height: 2;
     border: transparent;
     font-weight: 400;
     color: $blue;
     margin: 0 19px 0 -7px;
-    max-width: 150px;
+    max-width: 155px;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;

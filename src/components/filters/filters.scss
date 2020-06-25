@@ -70,10 +70,15 @@
       display: flex;
       justify-content: space-between;
       line-height: 13px;
-      margin-bottom: 12px;
+      margin-bottom: 14px;
 
       &:last-child {
-        margin-bottom: 15px;
+        margin-bottom: 18px;
+      }
+
+      @media(max-width: 575px) {
+        font-size: 14px;
+        line-height: 1.2;
       }
     }
   }
@@ -122,5 +127,6 @@
     white-space: nowrap;
     overflow: hidden;
     width: 100%;
+    background-color: #fff;
   }
 }
