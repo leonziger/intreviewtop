@@ -94,6 +94,31 @@
     align-items: center;
   }
 
+  &__employment {
+    &-items {
+      margin: 0 auto;
+      text-align: center;
+
+      @media(max-width: 1099px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    }
+
+    &-item {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__relocation {
+    padding-left: 10px;
+
+    &-item {
+      margin-bottom: 12px;
+    }
+  }
+
   &__skill {
     font-weight: normal;
     font-size: 16px;

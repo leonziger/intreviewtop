@@ -224,23 +224,23 @@
             <div class="base__subtitle filter__title title_active">Вид зайнятості</div>
             <div class="filter__body" style="display: block">
                 <div class="filter__container">
-                    <ul class="filter__skills">
-                        <li class="filter__skill">
-                            <input name="employment" type="radio" id="employment1" value="Full-time">
-                            <label for="employment1" class="filter__skill-checkbox radio__label">
-                                <span>Повна</span>
+                    <ul class="filter__employment-items">
+                        <li class="filter__employment-item">
+                            <input name="employment" type="radio" id="employment3" value="Freelance" class="button__radio" checked>
+                            <label for="employment3" class="filter__skill-checkbox button__label">
+                                <span>Freelance</span>
                             </label>
                         </li>
-                        <li class="filter__skill">
-                            <input name="employment" type="radio" id="employment2" value="Part-time">
-                            <label for="employment2" class="filter__skill-checkbox radio__label">
-                                <span>Часткова</span>
+                        <li class="filter__employment-item">
+                            <input name="employment" type="radio" id="employment1" value="Full-time" class="button__radio">
+                            <label for="employment1" class="filter__skill-checkbox button__label">
+                                <span>Full-time</span>
                             </label>
                         </li>
-                        <li class="filter__skill">
-                            <input name="employment" type="radio" id="employment3" value="Project">
-                            <label for="employment3" class="filter__skill-checkbox radio__label">
-                                <span>Попроектна</span>
+                        <li class="filter__employment-item">
+                            <input name="employment" type="radio" id="employment2" value="Part-time" class="button__radio">
+                            <label for="employment2" class="filter__skill-checkbox button__label">
+                                <span>Part-time</span>
                             </label>
                         </li>
                     </ul>
@@ -296,18 +296,24 @@
             <div class="base__subtitle filter__title title_active">Можливість переїзду</div>
             <div class="filter__body" style="display: block">
                 <div class="filter__container">
-                    <ul class="filter__skills">
-                        <li class="filter__skill">
-                            <input name="relocation" type="radio" id="relocation1" value="Yes">
-                            <label for="relocation1" class="filter__skill-checkbox radio__label">
-                                <span>Так</span>
-                            </label>
+                    <ul class="filter__relocation">
+                        <li class="filter__relocation-item">
+                            <div class="thumbler">
+                                <input id="relocation1" class="thumbler__toggle thumbler__toggle-round" type="checkbox">
+                                <label for="relocation1"><span class="thumbler__title">Remote</span></label>
+                            </div>
                         </li>
-                        <li class="filter__skill">
-                            <input name="relocation" type="radio" id="relocation2" value="No">
-                            <label for="relocation2" class="filter__skill-checkbox radio__label">
-                                <span>Нi</span>
-                            </label>
+                        <li class="filter__relocation-item">
+                            <div class="thumbler">
+                                <input id="relocation2" class="thumbler__toggle thumbler__toggle-round" type="checkbox">
+                                <label for="relocation2"><span class="thumbler__title">Relocate</span></label>
+                            </div>
+                        </li>
+                        <li class="filter__relocation-item">
+                            <div class="thumbler">
+                                <input id="relocation3" class="thumbler__toggle thumbler__toggle-round" type="checkbox">
+                                <label for="relocation3"><span class="thumbler__title">Other city</span></label>
+                            </div>
                         </li>
                     </ul>
                 </div>

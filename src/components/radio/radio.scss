@@ -37,7 +37,34 @@ input[type=radio] {
   display: none;
 }
 
-input[type=radio]:checked + label:after {
+input[type=radio]:checked + .radio__label:before {
+  border: 1px solid $blue;
+}
+input[type=radio]:checked + .radio__label:after {
   opacity: 1;
 }
 
+
+.button {
+
+  &__label {
+    cursor: pointer;
+    margin: 8px;
+    padding: 5px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.05em;
+    color: $blue;
+    background-color: #fff;
+    border: 1px solid $blue;
+    box-sizing: border-box;
+    border-radius: 2px;
+    transition: $delay;
+  }
+
+  &__radio:checked + .button__label {
+    background-color: $blue;
+    color: #fff;
+  }
+}
