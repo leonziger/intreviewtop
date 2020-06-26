@@ -12,16 +12,6 @@
   border: none;
 }
 
-::placeholder {
-  font: 400 16px/1.4 'Inter', sans-serif;
-  font-size: 16px;
-  color: #A9A9CA;
-  letter-spacing: 0.05em;
-
-  @media(max-width: 400px) {
-    font-size: 14px;
-  }
-}
 
 * {
   margin: 0;

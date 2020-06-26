@@ -112,10 +112,12 @@
   }
 
   &__relocation {
-    padding-left: 10px;
+    display: flex;
+    flex-wrap: wrap;
 
     &-item {
-      margin-bottom: 12px;
+      margin: 8px;
+      width: 150px;
     }
   }
 

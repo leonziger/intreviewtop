@@ -7,18 +7,24 @@
         <input type="password" placeholder="Пароль" name="password" class="reg-form__field">
     </div>
     <div class="reg-form__checkboxes">
-        <label for="candidate" class="reg-form__checkbox">
-            <input name="role" type="radio" id="candidate" value="candidate">
-            <span class="reg-form__checkbox_bold">Я кандидат</span> - шукаю пропозицiї
-        </label>
-        <label for="recruter" class="reg-form__checkbox">
-            <input name="role" type="radio" id="recruter" value="recruter">
-            <span class="reg-form__checkbox_bold">Я рекрутер</span> - шукаю розробникiв
-        </label>
-        <label for="interviewer" class="reg-form__checkbox">
-            <input name="role" type="radio" id="interviewer" value="interviewer" checked>
-            <span class="reg-form__checkbox_bold">Я iнтерв'юер</span> - проводжу спiвбесiди
-        </label>
+        <div class="reg-form__checkboxes-item">
+            <input name="role" type="radio" id="candidate" value="candidate" class="radio__input">
+            <label for="candidate" class="reg-form__checkbox radio__label radio__label_big">
+                <span class="reg-form__checkbox_bold">Я кандидат</span> - шукаю пропозицiї
+            </label>
+        </div>
+        <div class="reg-form__checkboxes-item">
+            <input name="role" type="radio" id="recruiter" value="recruiter" class="radio__input">
+            <label for="recruiter" class="reg-form__checkbox radio__label radio__label_big">
+                <span class="reg-form__checkbox_bold">Я рекрутер</span> - шукаю розробникiв
+            </label>
+        </div>
+        <div class="reg-form__checkboxes-item">
+            <input name="role" type="radio" id="interviewer" value="interviewer" class="radio__input">
+            <label for="interviewer" class="reg-form__checkbox radio__label radio__label_big">
+                <span class="reg-form__checkbox_bold">Я iнтерв'юер</span> - проводжу спiвбесiди
+            </label>
+        </div>
     </div>
     <div class="reg-form__notice">Ви приймаєте <a href="./terms.html" class="reg-form__notice-link">правила сайту</a> та <a href="./privacy.html" class="reg-form__notice-link">політику конфіденційності</a></div>
     <button type="submit" class="the-button reg-form__submit">Зареєструватися</button>
@@ -29,7 +35,7 @@
                 <div class="reg-form__social-name">Google</div>
                 {{> icon iconName="google" classNames="social-link" }}
             </button>
-            <button class="reg-form__social-link linkedin">
+            <button class="reg-form__social-link linkedin-button">
                 <div class="reg-form__social-name">LinkedIn</div>
                 {{> icon iconName="linkedin" classNames="social-link" }}
             </button>

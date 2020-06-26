@@ -49,6 +49,35 @@
       padding: 20px;
     }
   }
+
+  &__alert {
+    font-weight: 400;
+    color: $red;
+    border: 2px solid $red;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.04), 0 2px 6px rgba(0, 0, 0, 0.04), 0 10px 20px rgba(252, 54, 101, 0.04);
+    border-radius: 3px;
+    padding: 8px 14px;
+    letter-spacing: 0.045em;
+    display: flex;
+    margin-bottom: 29px;
+
+    @media(max-width: 1099px) {
+      font-size: 14px;
+      line-height: 1.2;
+      align-items: center;
+    }
+
+    &:before {
+      content: '';
+      width: 21px;
+      height: 18px;
+      display: block;
+      background-image: url(../images/alert.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+      padding: 5px 15px 0;
+    }
+  }
 }
 
 .candidate {
@@ -195,10 +224,6 @@
     }
   }
 
-  &__title {
-
-  }
-
   &__date {
     font-weight: 400;
     font-size: 12px;
@@ -258,10 +283,18 @@
     }
 
     &_opened {
-      color: #18D1A5;
+      color: $green;
 
       &:before {
         background-image: url(../images/contact-opened.svg);
+      }
+    }
+
+    &_alert {
+      color: $red;
+
+      &:before {
+        background-image: url(../images/contact-alert.svg);
       }
     }
   }
@@ -275,6 +308,39 @@
     @media(max-width: 991px) {
       top: 10px;
       right: 0;
+    }
+  }
+
+  &.recruitment-list {
+
+    .offer__recruiter {
+      width: 464px;
+      padding-left: 84px;
+      padding-top: 4px;
+      letter-spacing: 0.05em;
+
+      @media(max-width: 1099px) {
+        width: 350px;
+      }
+
+      @media(max-width: 991px) {
+        padding-left: 0;
+        width: 100%;
+      }
+    }
+
+    .offer__comission {
+      width: 125px;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 1.4;
+      letter-spacing: 0.05em;
+      color: $black;
+      padding-top: 6px;
+    }
+
+    .offer__contact {
+      padding-top: 4px;
     }
   }
 

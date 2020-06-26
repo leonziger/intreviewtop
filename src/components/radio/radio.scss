@@ -1,8 +1,27 @@
 .radio {
 
+  &__input {
+    display: none;
+
+    &:checked {
+      + .radio__label {
+
+        &:before {
+          border: 1px solid $blue;
+        }
+
+        &:after {
+          opacity: 1;
+        }
+      }
+
+    }
+  }
+
   &__label {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     cursor: pointer;
     position: relative;
 
@@ -30,22 +49,21 @@
       transition: 0.3s;
       border-radius: 50%;
     }
+
+    &_big {
+      &:after {
+        top: 7px;
+        transform: translateY(0%);
+      }
+    }
   }
 }
 
-input[type=radio] {
-  display: none;
-}
-
-input[type=radio]:checked + .radio__label:before {
-  border: 1px solid $blue;
-}
-input[type=radio]:checked + .radio__label:after {
-  opacity: 1;
-}
-
-
 .button {
+
+  &__radio {
+    display: none;
+  }
 
   &__label {
     cursor: pointer;

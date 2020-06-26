@@ -14,14 +14,21 @@
   }
 
   &__field {
-    height: 40px;
     border: 1px solid #E6ECF5;
     box-sizing: border-box;
     border-radius: 2px;
     width: 100%;
     letter-spacing: 0.05em;
-    padding: 11px 14px 9px;
+    padding: 10px 14px;
     z-index: 0;
+    height: 40px;
+    font-size: 16px;
+
+    &::placeholder {
+      font: 400 16px/19px 'Inter', sans-serif;
+      color: #A9A9CA;
+      letter-spacing: 0.05em;
+    }
 
     &-label {
       font-size: 10px;
@@ -57,18 +64,20 @@
   &__checkboxes {
     margin-top: -3px;
     margin-bottom: 36px;
+    margin-left: -2px;
   }
 
   &__checkbox {
     display: block;
     font-size: 16px;
     line-height: 19px;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.06em;
     color: $black;
     margin-bottom: 8px;
 
     &_bold {
       font-weight: 600;
+      padding-right: 5px;
     }
   }
 
@@ -136,7 +145,7 @@
         }
       }
 
-      &.linkedin {
+      &.linkedin-button {
         padding: 13px 48px 13px 43px;
 
         @media(max-width: 479px) {
