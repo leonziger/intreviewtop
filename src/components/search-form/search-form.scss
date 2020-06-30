@@ -137,6 +137,20 @@
   &__tags {
     display: flex;
     flex-wrap: wrap;
+    max-width: 600px;
+
+    @media(max-width: 839px) {
+      max-width: 100%;
+    }
+
+    &-subscribe {
+      display: flex;
+      justify-content: space-between;
+
+      @media(max-width: 839px) {
+        flex-direction: column;
+      }
+    }
   }
 
   &__tag {
@@ -161,6 +175,58 @@
       background-repeat: no-repeat;
       background-position: center;
       background-image: url(../images/close.svg);
+    }
+  }
+
+  &__subscribe {
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.4;
+    letter-spacing: 0.04em;
+    color: $black;
+    display: flex;
+
+    @media(max-width: 839px) {
+      align-items: center;
+      align-self: flex-end;
+      margin-top: 20px;
+    }
+
+    &:before {
+      content: 'Додати до підписок';
+      display: block;
+      transition: $delay;
+      white-space: nowrap;
+
+      @media(max-width: 839px) {
+        font-size: 14px;
+        line-height: 1.2;
+      }
+    }
+
+    &:after {
+      content: '';
+      display: block;
+      width: 24px;
+      height: 24px;
+      background-image: url('../images/subscribe.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      transition: $delay;
+      margin-left: 7px;
+    }
+
+    &.subscribed {
+
+      &:before {
+        content: 'Видалити з підписок';
+        color: $blue;
+      }
+
+      &:after {
+        transform: rotate(45deg);
+      }
     }
   }
 }

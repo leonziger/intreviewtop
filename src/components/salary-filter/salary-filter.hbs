@@ -2,5 +2,14 @@
     <div class="base__notes salary-filter__info">
         Вiд <input type="text" class="salary-filter__input salary-min" placeholder="1000$"> до <input type="text" class="salary-filter__input salary-max" placeholder="2000$">
     </div>
-    <!--{{> rangeslider }}-->
+    <div class="base__notes salary-filter__salary-info">
+        <div class="salary-filter__salary-min">500</div>$
+        <div class="multi-range">
+            <input type="range" min="100" max="2500" step="100" id="lower" class="multi-range__axis multi-range__left">
+            <input type="range" min="2600" max="5000" step="100" id="upper" class="multi-range__axis multi-range__right">
+        </div>
+        <div class="salary-filter__salary-max">4000</div>$
+    </div>
+
+
 </form>

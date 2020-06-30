@@ -4,6 +4,21 @@
     display: flex;
     align-items: center;
     margin-top: 14px;
+    margin-bottom: 5px;
+
+    @media(max-width: 1099px) {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__salary {
+
+    &-info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: $lightgray;
+    }
   }
 
   &__input {
@@ -40,5 +55,74 @@
 
   &-max {
     margin-left: 4px;
+  }
+}
+
+.multi-range {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  width: 137px;
+
+  @media(max-width: 1099px) {
+    width: 100%;
+    padding: 0 10px;
+    max-width: 600px;
+  }
+
+  &__axis {
+    height: 1px;
+    background-color: #E6ECF5;
+    width: 69px !important;
+
+    @media(max-width: 1099px) {
+      width: 100% !important;
+      max-width: 300px;
+    }
+  }
+}
+
+.rangeslider {
+  width: 69px;
+
+  @media(max-width: 1099px) {
+    width: 50%;
+    //outline: 1px solid red;
+  }
+
+  &__fill {
+    height: 1px;
+    background-color: #E6ECF5;
+
+    &__bg {
+      height: 1px;
+      background-color: $blue;
+    }
+  }
+
+  &:last-child {
+
+    .rangeslider__fill {
+      background-color: $blue;
+      height: 1px;
+    }
+
+    .rangeslider__fill__bg {
+      background-color: #E6ECF5;
+      height: 1px;
+    }
+  }
+
+  &__handle,
+  &__handle:active {
+    width: 13px;
+    height: 13px;
+    background: $blue;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.04), 0 2px 6px rgba(0, 0, 0, 0.04), 0 10px 20px rgba(0, 0, 0, 0.04);
+
+    @media(max-width: 1099px) {
+      width: 20px;
+      height: 20px;
+    }
   }
 }

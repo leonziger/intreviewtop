@@ -1,0 +1,87 @@
+.upload-form {
+
+  @media(max-width: 767px) {
+    width: 100%;
+  }
+
+  &__line {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.05em;
+    color: $black;
+
+    @media(max-width: 991px) {
+      flex-direction: column;
+    }
+
+    &-left {
+      display: flex;
+      align-items: center;
+
+      @media(max-width: 991px) {
+        margin-bottom: 10px;
+      }
+    }
+
+    &-right {
+      display: flex;
+
+      @media(max-width: 767px) {
+        width: 100%;
+        justify-content: center;
+      }
+
+      @media(max-width: 399px) {
+        flex-direction: column;
+      }
+    }
+  }
+
+  &__select {
+    font-weight: 600;
+    max-width: 74px;
+    margin: 6px 15px 0 3px;
+  }
+
+  &__field {
+    width: 368px;
+    height: 40px;
+    border: 1px solid $lightgray;
+    border-radius: 2px 0 0 2px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.25px;
+    letter-spacing: 0.05em;
+    color: $lightgray;
+    padding: 5px 14px;
+
+    @media(max-width: 767px) {
+      height: 30px;
+    }
+
+    @media(max-width: 399px) {
+      margin-bottom: 10px;
+    }
+
+    @media(max-width: 575px) {
+      height: 30px;
+      width: 100%;
+      max-width: 368px;
+    }
+  }
+
+  &__submit {
+    background: $lightgray;
+    border-radius: 0 2px 2px 0;
+    padding: 9px 18px;
+
+    @media(max-width: 767px) {
+      height: 30px;
+      font-size: 14px;
+      line-height: 1.2;
+    }
+  }
+}

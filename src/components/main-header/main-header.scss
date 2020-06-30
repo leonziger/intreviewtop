@@ -20,14 +20,14 @@
     align-items: center;
     justify-content: space-between;
   }
-  
+
   &__logo {
     font-weight: 500;
     font-size: 32px;
     line-height: 1.22;
     letter-spacing: 0.05em;
     color: #FFF;
-    text-decoration: none;  
+    text-decoration: none;
 
     @media(max-width: 991px) {
       font-size: 24px;
@@ -51,12 +51,55 @@
 
     &-menu {
       margin-right: -3px;
-      margin-top: 3px;
       text-decoration: none;
       display: none;
 
       @media(max-width: 767px) {
         margin-right: 0;
+      }
+      
+      .dropdown {
+
+        &__icon {
+          span, 
+          &:before,
+          &:after {
+            background-color: #fff;
+          }
+        }
+
+        &__container {
+          margin: 22px 8px 0 0;
+          padding: 17px 32px 6px 22px;
+        }
+
+        &__item {
+          margin-bottom: 14px;
+        }
+
+        &__link {
+          display: flex;
+          align-items: center;
+
+          &:before {
+            content: '';
+            width: 24px;
+            height: 24px;
+            display: block;
+            background-image: url(../images/settings.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            margin-right: 4px;
+          }
+
+          &_alert {
+            color: $red;
+
+            &:before {
+              background-image: url(../images/power.svg);
+            }
+          }
+        }
       }
     }
 
@@ -69,6 +112,64 @@
       display: none;
       text-decoration: none;
       color: #fff;
+
+      .dropdown {
+
+        &__icon {
+          span,
+          &:before,
+          &:after {
+            background-color: transparent;
+          }
+        }
+
+        &__container {
+          min-width: 307px;
+          width: 100%;
+          margin: 20px -7px 0 0;
+          padding: 23px 0 4px;
+        }
+
+        &__title {
+          color: $black;
+          white-space: nowrap;
+          margin-bottom: 14px;
+          padding-left: 27px;
+        }
+
+        &__message {
+          display: flex;
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 1.25;
+          letter-spacing: 0.05em;
+          color: $black;
+          background-color: #fefeff;
+          padding: 17px 26px;
+          border-top: 1px solid #E6ECF4;
+
+          &-name {
+            display: block;
+            font-weight: 600;
+            color: $blue;
+            text-decoration: none;
+            margin-top: 2px;
+            margin-bottom: 8px;
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+
+          &-text {
+            margin-left: 20px;
+          }
+
+          &-description {
+
+          }
+        }
+      }
     }
 
     &-icon {
@@ -107,7 +208,8 @@
         margin-top: 4px;
 
         @media(max-width: 767px) {
-          display: none;
+          margin-top: 0;
+          margin-right: 10px;
         }
       }
 
@@ -117,6 +219,10 @@
 
         @media(max-width: 991px) {
           margin: 0 20px;
+        }
+
+        @media(max-width: 767px) {
+          display: none;
         }
       }
 

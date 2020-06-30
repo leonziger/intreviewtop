@@ -1,0 +1,147 @@
+.recruitment-form {
+
+  &__line {
+    display: flex;
+    align-items: center;
+    margin-bottom: 34px;
+
+    @media(max-width: 767px) {
+      margin-bottom: 30px;
+    }
+
+    @media(max-width: 575px) {
+      flex-direction: column;
+    }
+  }
+
+  &__label {
+    width: 240px;
+    margin-right: 35px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.4;
+    letter-spacing: 0.05em;
+    color: $black;
+
+    @media(max-width: 767px) {
+      font-size: 14px;
+      line-height: 1.2;
+    }
+
+    @media(max-width: 575px) {
+      padding: 0;
+      text-align: center;
+      margin: 0 0 10px 0;
+      width: 100%;
+      justify-content: center;
+    }
+  }
+
+  &__field {
+    border: 1px solid #E6ECF5;
+    box-sizing: border-box;
+    border-radius: 2px;
+    height: 40px;
+    width: 368px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.4;
+    letter-spacing: 0.05em;
+    color: $black;
+    padding: 16px;
+
+    @media(max-width: 767px) {
+      height: 30px;
+      padding: 5px 10px;
+      font-size: 14px;
+      line-height: 1.2;
+    }
+
+    @media(max-width: 479px) {
+      width: 100%;
+    }
+  }
+
+  &__candidates {
+    margin-left: 275px;
+
+    @media(max-width: 839px) {
+      max-width: 300px;
+      margin: 0 auto;
+    }
+  }
+
+  &__candidate {
+    display: flex;
+    padding-top: 2px;
+    margin-bottom: 30px;
+
+    @media(max-width: 399px) {
+      flex-direction: column;
+      margin: 0 auto 30px;
+      max-width: 180px;
+    }
+
+    &-wrap {
+      align-items: flex-start;
+    }
+
+    &-image {
+      border-radius: 50px;
+      margin-left: 12px;
+      margin-right: 30px;
+      padding-top: 3px;
+
+      @media(max-width: 399px) {
+        margin-bottom: 16px;
+      }
+    }
+
+    &-text {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.4;
+      letter-spacing: 0.05em;
+      color: $black;
+
+      @media(max-width: 399px) {
+        font-size: 14px;
+        line-height: 1.2;
+      }
+    }
+
+    &-name {
+      display: block;
+      font-weight: 600;
+      margin-bottom: 9px;
+    }
+
+    &-position {
+      margin-bottom: 9px;
+    }
+
+    &-date {
+      display: flex;
+
+      &:before {
+        content: '';
+        width: 24px;
+        height: 24px;
+        display: block;
+        background-image: url('../images/calendar.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        margin: -1px 3px 0 -4px;
+      }
+    }
+  }
+
+  &__submit {
+    margin: 78px 0 45px 275px;
+    padding: 14px 42px;
+
+    @media(max-width: 839px) {
+      margin: 50px auto;
+    }
+  }
+}

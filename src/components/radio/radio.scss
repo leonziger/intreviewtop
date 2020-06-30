@@ -56,6 +56,12 @@
         transform: translateY(0%);
       }
     }
+
+    &_candidate {
+      &:before {
+        align-self: center;
+      }
+    }
   }
 }
 

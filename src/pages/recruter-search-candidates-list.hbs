@@ -215,9 +215,29 @@
                     </div>
                 </div>
                 <div class="inner-container__small dashboard__aside">
-                    <div class="fraimed-container filters__container">
-                        <div class="search-candidate__filters">
-                            {{> filters }}
+                    <div class="fraimed-container filters__container search-candidate__filters">
+                        {{> filters }}
+                    </div>
+                    <div class="fraimed-container filters__container search-candidate__subscribes">
+                        <div class="filter my-subscribers">
+                            <div class="base__subtitle filter__title title_active">Мої пiдписки</div>
+                            <div class="filter__body" style="display: block;">
+                                <div class="filter__container">
+                                    <ul class="filter__subscribers">
+                                        <li class="filter__subscriber">
+                                            <a href="#" class="filter__subscriber-link">Одеса/Ruby/1500-2000$/Upper-intermediate</a>
+                                            <img src="./images/trash.svg" class="filter__subscriber-icon">
+                                        </li>
+                                    </ul>
+                                    <div class="filter__subtitle">Додати пiдписку з обраних фiльтрiв</div>
+                                    <ul class="filter__subscribers">
+                                        <li class="filter__subscriber">
+                                            <a href="#" class="filter__subscriber-link">Київ/Python/1000-2200$/intermediate</a>
+                                            <img src="./images/subscribe.svg" class="filter__subscriber-icon">
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

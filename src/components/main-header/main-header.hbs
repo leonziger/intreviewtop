@@ -11,15 +11,54 @@
             <a href="./auth.html" class="main-header__user-auth">
                 Увiйти
             </a>
-            <a href="./notices.html" class="main-header__user-notices">
-                {{> icon iconName="notice_active" classNames="notice" }}
-            </a>
+            <div class="main-header__user-notices">
+                <div class="dropdown">
+                    <div class="dropdown__icon">
+                        {{> icon iconName="notice_active" classNames="notice" }}
+                    </div>
+                    <div class="fraimed-container dropdown__container">
+                        <div class="base__subtitle dropdown__title">Новi повiдомлення</div>
+                        <ul class="dropdown__messages">
+                            <li class="dropdown__message">
+                                <div class="dropdown__message-image">
+                                    <img src="./images/message1.png" alt="" class="dropdown__message-icon">
+                                </div>
+                                <div class="dropdown__message-text">
+                                    <a href="#" class="dropdown__message-name">Кучеренко Андрiй</a>
+                                    <div class="dropdown__message-description">Вiдкрив вам свої контакти</div>
+                                </div>
+                            </li>
+                            <li class="dropdown__message">
+                                <div class="dropdown__message-image">
+                                    <img src="./images/message2.png" alt="" class="dropdown__message-icon">
+                                </div>
+                                <div class="dropdown__message-text">
+                                    <a href="#" class="dropdown__message-name">Левченко Олена</a>
+                                    <div class="dropdown__message-description">Вiдкрив вам свої контакти</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
             <a href="./profile.html" class="main-header__user-icon">
                 <div class="main-header__user-inner"></div>
             </a>
-            <a href="#" class="main-header__user-menu user-menu">
-                {{> icon iconName="verticalburger" classNames="notice" }}
-            </a>
+            <div class="dropdown main-header__user-menu">
+                <div class="dropdown__icon">
+                    <span></span>
+                </div>
+                <div class="fraimed-container dropdown__container">
+                    <ul class="dropdown__list">
+                        <li class="dropdown__item"><a href="#" class="dropdown__link">
+                            Налаштування</a>
+                        </li>
+                        <li class="dropdown__item"><a href="#" class="dropdown__link dropdown__link_alert">
+                            Вийти
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
 </header>

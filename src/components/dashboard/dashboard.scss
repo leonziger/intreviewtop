@@ -78,6 +78,14 @@
       padding: 5px 15px 0;
     }
   }
+
+  &__recruitment-form {
+    margin: 17px 43px;
+
+    @media(max-width: 575px) {
+      margin: 0;
+    }
+  }
 }
 
 .candidate {
@@ -700,11 +708,41 @@
     @media(max-width: 575px) {
       padding: 5px 20px 12px;
     }
+  }
 
+  .dashboard__section {
+    margin-bottom: 99px;
+  }
+}
+
+.inform-recruitment {
+  &__title {
+    padding-bottom: 11px;
+  }
+
+  &__subtitle {
+    color: $black;
+    font-weight: 400;
+    letter-spacing: 0.045em;
+    margin-bottom: 20px;
   }
 }
 
 .offer-menu {
   width: 24px;
   height: 24px;
+}
+
+.search-candidate {
+  &__filters {
+    margin-bottom: 19px;
+  }
+
+  &__subscribes {
+    padding-bottom: 0;
+
+    .filter {
+      border-bottom: none;
+    }
+  }
 }

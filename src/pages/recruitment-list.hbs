@@ -14,7 +14,7 @@
                         <div class="offer__comission">$800</div>
                         <div class="offer__contact offer__contact_opened">Сплачено</div>
                         <div class="offer__menu">
-                            {{> icon iconName="verticalburger_black" classNames="offer-menu" }}
+                            {{> dropdown }}
                         </div>
                     </div>
                     <div class="offer recruitment-list">
@@ -26,7 +26,7 @@
                         <div class="offer__comission">$750</div>
                         <div class="offer__contact offer__contact_alert">Чекає на оплату</div>
                         <div class="offer__menu">
-                            {{> icon iconName="verticalburger_black" classNames="offer-menu" }}
+                            {{> dropdown }}
                         </div>
                     </div>
                     <div class="offer recruitment-list">
@@ -38,8 +38,17 @@
                         <div class="offer__comission">$500</div>
                         <div class="offer__contact offer__contact_alert">Чекає на оплату</div>
                         <div class="offer__menu">
-                            {{> icon iconName="verticalburger_black" classNames="offer-menu" }}
+                            {{> dropdown }}
                         </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dashboard__section inform-recruitment">
+                <h1 class="inform-recruitment__title">Повiдомити про найм</h1>
+                <div class="base__subtitle inform-recruitment__subtitle">Найняли кандидата? Повiдомте нам будь-ласка</div>
+                <div class="fraimed-container dashboard__container">
+                    <div class="dashboard__recruitment-form">
+                        {{> recruitment-form }}
                     </div>
                 </div>
             </div>

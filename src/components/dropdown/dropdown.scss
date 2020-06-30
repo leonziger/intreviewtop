@@ -1,0 +1,99 @@
+.dropdown {
+  flex-direction: column;
+  align-items: flex-end;
+  cursor: pointer;
+  position: relative;
+
+  &__icon {
+    text-align: right;
+    height: 24px;
+    width: 24px;
+    cursor: pointer;
+    transition: $delay;
+    position: relative;
+
+    span{
+      position: absolute;
+      left:0; right:0;
+      top: 0; bottom: 0;
+      margin: auto;
+      background-color: #141F31;
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      transition: $delay;
+    }
+
+    &:before{
+      content:'';
+      position: absolute;
+      left:0; right:0;
+      top: 3px;
+      margin: auto;
+      background-color: #141F31;
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      transition: $delay;
+    }
+
+    &:after{
+      content:'';
+      position: absolute;
+      left:0; right:0;
+      bottom: 3px;
+      margin: auto;
+      background-color: #141F31;
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      transition: $delay;
+    }
+  }
+
+  &__container {
+    display: none;
+    background-color: #fff;
+    margin: 8px 8px 0 0;
+    padding: 21px 28px 4px;
+    position: absolute;
+    right: 0;
+    z-index: 2;
+  }
+
+  &__list {
+    margin-top: 5px;
+  }
+
+  &__item {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.4;
+    letter-spacing: 0.04em;
+    color: $black;
+    margin-bottom: 17px;
+  }
+
+  &__link {
+    color: $black;
+    white-space: nowrap;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &_red {
+      color: $red;
+    }
+  }
+
+  &_active {
+    span,
+    &:before,
+    &:after {
+      background-color: $blue;
+    }
+  }
+}
+

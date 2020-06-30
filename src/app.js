@@ -1,12 +1,13 @@
 window.$ = window.jQuery = require('jquery');
 import 'jquery.nicescroll';
 import 'slick-carousel';
-import 'ion-rangeslider';
 
 import './components/main-header/main-header';
 import './components/menu-toggle/menu-toggle';
-import './components/rangeslider/rangeslider';
 import './components/reg-form/reg-form';
+import './components/search-form/search-form';
+import './components/salary-filter/salary-filter';
+import './components/dropdown/dropdown';
 
 const filterTitle = $('.filter__title');
 const moreInfo = $('.more-info');
@@ -74,21 +75,3 @@ applicantAnswersWrap.niceScroll({
     cursorborderradius:0
   });
 
-// $('.filter__rangeslider').rangeslider({
-//   polyfill: false,
-//   onSlide: function(position, value) {
-//     videoList.css({
-//       transform: `translateX(-${value}px)`
-//     });
-//   }
-// });
-
-// $(".js-range-slider").ionRangeSlider({
-//   type: "double",
-//   grid: true,
-//   min: 0,
-//   max: 1000,
-//   from: 200,
-//   to: 800,
-//   prefix: "$"
-// });
