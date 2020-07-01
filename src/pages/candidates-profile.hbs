@@ -8,12 +8,23 @@
                     <div class="candidates-profile__button-title">Імпортувати данні</div>
                 </button>
             </div>
+            <div class="candidates-profile__activation">
+                <input id="activation" class="thumbler__toggle thumbler__toggle-round" type="checkbox" checked>
+                <label for="activation"><span class="candidates-profile__activation-title">Профiль активовано</span></label>
+            </div>
 
             <div class="dashboard">
                 <div class="dashboard__section candidates-profile__upload">
                     <div class="fraimed-container candidates-profile__upload-container">
                         <div class="candidates-profile__upload-form">
                             {{> upload-form }}
+                        </div>
+                    </div>
+                </div>
+                <div class="dashboard__section candidates-profile__worksheet">
+                    <div class="fraimed-container candidates-profile__worksheet-container">
+                        <div class="candidates-profile__worksheet-form">
+                            {{> worksheet-form }}
                         </div>
                     </div>
                 </div>

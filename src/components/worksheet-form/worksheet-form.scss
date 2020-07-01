@@ -1,0 +1,377 @@
+.worksheet-form {
+
+  &__tabs {
+    text-align: center;
+  }
+
+  &__tab {
+
+    &-name {
+      display: inline-block;
+      margin: 0 15px 43px;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 1.4;
+      letter-spacing: 0.05em;
+      color: $lightgray;
+      padding-bottom: 7px;
+      border-bottom: 1px solid transparent;
+
+      @media(max-width: 767px) {
+        margin: 0 15px 30px;
+        font-size: 14px;
+        line-height: 1.2;
+      }
+    }
+
+    &-input {
+      display: none;
+
+      &:checked + .worksheet-form__tab-name {
+        color: $blue;
+        border-bottom: 1px solid $blue;
+      }
+    }
+  }
+
+  &__content {
+    display: none;
+  }
+
+  &__line {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.4;
+    letter-spacing: 0.05em;
+    color: $black;
+    margin-bottom: 36px;
+
+    @media(max-width: 819px) {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+
+    @media(max-width: 767px) {
+      margin-bottom: 26px;
+    }
+
+    &.not-centered {
+      align-items: flex-start;
+
+      .worksheet-form__label {
+        padding-top: 8px;
+      }
+    }
+
+    &.english-level {
+      margin-bottom: 45px;
+
+      .worksheet-form__label {
+        padding-top: 0;
+      }
+    }
+
+    &.employment {
+      margin-bottom: 27px;
+
+      @media(max-width: 819px) {
+        .worksheet-form__label {
+          margin-bottom: 20px;
+        }
+      }
+    }
+
+    &.employment-type {
+      margin-bottom: 85px;
+
+      @media(max-width: 819px) {
+        margin-bottom: 50px;
+      }
+    }
+
+    &.soc-media {
+
+      &__item {
+        margin-bottom: 45px;
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+
+        @media (max-width: 767px) {
+          margin-bottom: 26px;
+        }
+
+        &:before {
+          content: '';
+          display: block;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+
+        &-skype {
+          margin-left: -8px;
+          padding-top: 2px;
+
+          @media (max-width: 767px) {
+            margin-left: 0;
+            padding-top: 0;
+          }
+
+          &:before {
+            width: 16px;
+            height: 16px;
+            background-image: url(../images/worksheet-skype.svg);
+            padding-right: 20px;
+          }
+        }
+
+        &-telegram {
+          margin-left: -8px;
+
+          @media (max-width: 767px) {
+            margin-bottom: 26px;
+          }
+
+          &:before {
+            width: 17px;
+            height: 15px;
+            background-image: url(../images/worksheet-telegram.svg);
+            padding-right: 20px;
+            margin-top: -2px;
+          }
+        }
+
+        &-linkedin {
+          margin-left: -8px;
+
+          @media (max-width: 767px) {
+            margin-bottom: 26px;
+          }
+
+          &:before {
+            width: 17px;
+            height: 17px;
+            background-image: url(../images/worksheet-linkedin.svg);
+            padding-right: 20px;
+            margin-top: -4px;
+            margin-left: -1px;
+          }
+        }
+
+        &_github {
+          margin-left: -8px;
+
+          @media (max-width: 767px) {
+            margin-bottom: 26px;
+          }
+
+          &:before {
+            width: 18px;
+            height: 17px;
+            background-image: url(../images/worksheet-github.svg);
+            padding-right: 20px;
+            margin-left: -2px;
+          }
+        }
+      }
+    }
+
+    &.last-line {
+      margin-bottom: 32px;
+    }
+  }
+
+  &__label {
+    font-weight: 600;
+    width: 262px;
+    text-align: left;
+
+    @media(max-width: 991px) {
+      max-width: 262px;
+      width: 100%;
+    }
+
+    @media(max-width: 819px) {
+      max-width: 100%;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    @media(max-width: 767px) {
+      line-height: 1.2;
+      font-size: 14px;
+    }
+  }
+
+  &__input,
+  &__area {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.4;
+    letter-spacing: 0.05em;
+    color: $black;
+    border: 1px solid #E6ECF5;
+    border-radius: 2px;
+    width: 368px;
+  }
+
+  &__input {
+    height: 40px;
+    padding: 5px 15px;
+
+    @media(max-width: 767px) {
+      line-height: 1.2;
+      font-size: 14px;
+      height: 30px;
+    }
+
+    &.mini-input {
+      width: 104px;
+    }
+
+    &-wrapper {
+      position: relative;
+
+      @media(max-width: 819px) {
+        width: 100%;
+        max-width: 100%;
+      }
+
+      &:before {
+        position: absolute;
+        left: -34px;
+        content: '';
+        display: block;
+        width: 24px;
+        height: 24px;
+        background-image: url(../images/worksheet-file.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        transform: translateY(-50%);
+        top: 50%;
+
+        @media(max-width: 819px) {
+          left: 0;
+        }
+      }
+    }
+
+    @media(max-width: 819px) {
+      width: 100%;
+    }
+  }
+
+  &__area {
+    height: 160px;
+    padding: 10px 15px;
+    line-height: 1.2;
+
+    @media(max-width: 819px) {
+      width: 100%;
+      height: 100px;
+    }
+
+    @media(max-width: 767px) {
+      line-height: 1.2;
+      font-size: 14px;
+    }
+
+    &#skills {
+      .search-form__tag {
+        margin-bottom: 13px;
+      }
+    }
+
+    &.mini-area {
+      height: 122px;
+
+      @media(max-width: 819px) {
+        width: 100%;
+        height: 100px;
+      }
+    }
+
+    &.tags {
+      padding: 10px 15px 4px;
+      height: auto;
+    }
+  }
+
+  &__buttons {
+    max-width: 368px;
+    margin: 0 auto;
+
+    @media(max-width: 575px) {
+      max-width: 100%;
+    }
+  }
+
+  &__button,
+  &__public-link {
+    width: 100%;
+  }
+
+  &__button {
+    @media(max-width: 575px) {
+      line-height: 1.2;
+      font-size: 14px;
+      height: 40px;
+    }
+  }
+
+  &__public-link {
+    text-decoration: none;
+    background: transparent;
+    color: $blue;
+    box-shadow: none;
+    border: 1px solid $blue;
+    padding: 13px 36px;
+    margin-bottom: 24px;
+
+    @media(max-width: 575px) {
+      line-height: 1.2;
+      font-size: 14px;
+      height: 40px;
+    }
+
+    &:hover {
+      text-decoration: none;
+      color: white;
+    }
+  }
+}
+
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2 {
+  display: block;
+}
+
+.filter__skills#english-level {
+  margin-top: -3px;
+  margin-bottom: -13px;
+}
+
+.filter__employment-items#employment {
+  display: flex;
+  margin: -2px 0 0;
+
+  @media(max-width: 399px) {
+    flex-direction: column;
+  }
+
+  .filter__employment-item {
+    margin: 0 8px 0 0;
+
+    @media(max-width: 399px) {
+      margin: 8px;
+    }
+  }
+}
+
+.filter__relocation#employment-type {
+  flex-direction: column;
+}

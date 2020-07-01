@@ -11,7 +11,7 @@ dropdownIcon.click(function() {
 });
 
 $(document).on('click', function(e) {
-  if (!$(e.target).closest(".dropdown").length) {
+  if (!$(e.target).closest('.dropdown').length) {
     $('.dropdown__container').hide();
 
     if ($('.dropdown__icon').hasClass('dropdown_active')) {

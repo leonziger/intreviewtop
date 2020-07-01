@@ -8,6 +8,41 @@
     }
   }
 
+  &__import {
+    position: relative;
+  }
+
+  &__activation {
+    position: absolute;
+    right: 0;
+    top: 13px;
+
+    @media(max-width: 767px) {
+      top: 0;
+    }
+
+    &-title {
+      display: block;
+      padding-left: 40px;
+      margin-top: 1px;
+      white-space: nowrap;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 1.25;
+      letter-spacing: 0.05em;
+      margin-left: -186px;
+      color: $lightgray;
+
+      @media(max-width: 399px) {
+        display: none;
+      }
+    }
+  }
+
+  .thumbler__toggle-round:checked + label>.candidates-profile__activation-title {
+    color: $blue;
+  }
+
   &__button {
     font-size: 12px;
     line-height: 1.25;
@@ -56,6 +91,8 @@
   }
 
   &__upload {
+    margin-bottom: 24px;
+
     &-form {
       padding: 12px 42px;
 
@@ -72,5 +109,24 @@
       }
     }
 
+  }
+
+  &__worksheet {
+
+    &-form {
+      padding: 20px 42px;
+
+      @media(max-width: 575px) {
+        padding: 0;
+      }
+    }
+
+    &-container {
+      padding: 26px 32px 60px;
+
+      @media(max-width: 767px) {
+        padding: 20px 20px 30px 20px;
+      }
+    }
   }
 }

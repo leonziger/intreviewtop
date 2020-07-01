@@ -24,6 +24,13 @@
       @media(max-width: 991px) {
         margin-bottom: 10px;
       }
+
+      @media(max-width: 399px) {
+        justify-content: center;
+        flex-direction: column;
+        font-size: 14px;
+        line-height: 1.2;
+      }
     }
 
     &-right {
@@ -77,6 +84,7 @@
     background: $lightgray;
     border-radius: 0 2px 2px 0;
     padding: 9px 18px;
+    box-shadow: none;
 
     @media(max-width: 767px) {
       height: 30px;

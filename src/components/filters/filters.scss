@@ -107,7 +107,7 @@
     }
 
     &-item {
-      margin-bottom: 10px;
+      margin: 10px;
     }
   }
 
@@ -116,7 +116,7 @@
     flex-wrap: wrap;
 
     &-item {
-      margin: 8px;
+      margin: 13px 0 -4px;
       width: 150px;
     }
   }
@@ -124,7 +124,7 @@
   &__skill {
     font-weight: normal;
     font-size: 16px;
-    line-height: 1.6;
+    line-height: 1.7;
     letter-spacing: 0.05em;
     color: $black;
   }
