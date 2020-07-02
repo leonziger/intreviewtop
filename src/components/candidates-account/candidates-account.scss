@@ -1,0 +1,158 @@
+.candidates-account {
+
+  &__container {
+    padding: 42px 44px 20px 75px;
+
+    @media(max-width: 767px) {
+      padding: 40px;
+    }
+
+    @media(max-width: 575px) {
+      padding: 20px;
+    }
+  }
+
+  &__first-line {
+    position: relative;
+    margin-bottom: 44px;
+
+    @media(max-width: 575px) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__date {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  &__top {
+    display: flex;
+
+    @media(max-width: 767px) {
+      padding-top: 30px;
+    }
+
+    @media(max-width: 575px) {
+      flex-direction: column;
+      align-items: center;
+    }
+
+  }
+
+  &__image {
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+
+    @media(max-width: 575px) {
+      width: 100px;
+      height: 100px;
+    }
+
+    &-wrap {
+      margin-right: 55px;
+
+      @media(max-width: 575px) {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &__info {
+
+    @media(max-width: 575px) {
+      text-align: center;
+    }
+  }
+
+  &__name {
+    color: $black;
+    padding-top: 19px;
+    margin-bottom: 18px;
+
+    @media(max-width: 575px) {
+      padding-top: 10px;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__job {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.4;
+    letter-spacing: 0.05em;
+    color: $black;
+    display: flex;
+    margin-bottom: 23px;
+
+    @media(max-width: 575px) {
+      justify-content: center;
+      flex-wrap: wrap;
+      font-size: 14px;
+      line-height: 1.2;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__position {
+    padding-right: 5px;
+  }
+
+  &__company {
+    margin-left: 6px;
+  }
+
+  &__button {
+    padding: 13px 38px;
+    color: $blue;
+    border: 1px solid $blue;
+    box-shadow: none;
+    border-radius: 2px;
+    background-color: #fff;
+
+    &:hover {
+      color: #fff;
+    }
+
+    @media(max-width: 575px) {
+      height: 35px;
+    }
+  }
+
+  &__label {
+    max-width: 230px;
+    width: 100%;
+  }
+
+  &__form {
+    max-width: 600px;
+    width: 100%;
+
+    &-buttons {
+      display: flex;
+      justify-content: center;
+      padding-top: 35px;
+      padding-left: 55px;
+      padding-bottom: 45px;
+
+      @media(max-width: 819px) {
+        padding: 0 0 20px 0;
+
+      }
+    }
+  }
+
+  &__submit {
+    padding: 14px 56px;
+
+    @media(max-width: 575px) {
+      height: 35px;
+    }
+  }
+}
+
+//.worksheet-form__line.company {
+//  margin-bottom: 108px;
+//}

@@ -1,13 +1,39 @@
 <form action="" class="worksheet-form">
     <div class="worksheet-form__tabs">
-        <input id="tab1" type="radio" name="tabs" class="worksheet-form__tab-input">
+        <input id="tab1" type="radio" name="tabs" class="worksheet-form__tab-input" checked>
         <label class="worksheet-form__tab-name" for="tab1">Профiль</label>
-        <input id="tab2" type="radio" name="tabs" class="worksheet-form__tab-input"  checked="checked">
+        <input id="tab2" type="radio" name="tabs" class="worksheet-form__tab-input">
         <label class="worksheet-form__tab-name" for="tab2">Контакти<span class="hidden575"> та резюме</span></label>
         <div id="content1" class="worksheet-form__content">
             <div class="worksheet-form__line">
                 <label for="category" class="worksheet-form__label">Категорiя</label>
-                <input id="category" class="worksheet-form__input" value="C/C++/ Embedded">
+                <select id="category" name="category" class="worksheet-form__select">
+                    <option disabled>Выберiть категорiю</option>
+                    <option value="JavaScript">JavaScript</option>
+                    <option value="Front-End / HTML">Front-End / HTML</option>
+                    <option value="Node js">Node js</option>
+                    <option value="PHP">PHP</option>
+                    <option value="Python">Python</option>
+                    <option value="Ruby">Ruby</option>
+                    <option value="Android">Android</option>
+                    <option value="i0S / macOS">i0S / macOS</option>
+                    <option value="C/C++ / Embedded" selected>C/C++ / Embedded</option>
+                    <option value="Golang, Scala">Golang, Scala</option>
+                    <option value="Business Analyst">Business Analyst</option>
+                    <option value="Data Science">Data Science</option>
+                    <option value="Design / UX">Design / UX</option>
+                    <option value="Gamedev / Unity / AS3">Gamedev / Unity / AS3</option>
+                    <option value="Product Manager">Product Manager</option>
+                    <option value="Project Manager">Project Manager</option>
+                    <option value="QA Automation">QA Automation</option>
+                    <option value="QA Manual">QA Manual</option>
+                    <option value="SQL (DBA)">SQL (DBA)</option>
+                    <option value="Sysadmin / DevOps">Sysadmin / DevOps</option>
+                    <option value="Team LeadMarketing">Team LeadMarketing</option>
+                    <option value="Recruiting/HR">Recruiting/HR</option>
+                    <option value="Sales">Sales</option>
+                    <option value="Support">Support</option>
+                </select>
             </div>
             <div class="worksheet-form__line">
                 <label for="position" class="worksheet-form__label">Бажана посада</label>
@@ -43,7 +69,7 @@
                 <label for="experience-years" class="worksheet-form__label">Рокiв досвiду</label>
                 <input id="experience-years" class="worksheet-form__input mini-input" value="1 рiк">
             </div>
-            <div class="worksheet-form__line not-centered">
+            <div class="worksheet-form__line not-centered expectations">
                 <label for="expectations" class="worksheet-form__label">Очiкування вiд роботи</label>
                 <textarea id="expectations" class="worksheet-form__area mini-area">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</textarea>
             </div>
@@ -128,10 +154,6 @@
                     </li>
                 </ul>
             </div>
-            <div class="worksheet-form__buttons">
-                <a href="#" class="the-button worksheet-form__public-link">Дивитися публічний профіль</a>
-                <button type="submit" class="the-button worksheet-form__button">Оновити профiль</button>
-            </div>
         </div>
         <div id="content2" class="worksheet-form__content">
             <div class="worksheet-form__line">
@@ -146,20 +168,20 @@
                 <label for="phone" class="worksheet-form__label">Моб.Телефон</label>
                 <input id="phone" class="worksheet-form__input" value="(093) 093-0520">
             </div>
-            <div class="worksheet-form__line soc-media__line">
+            <div class="worksheet-form__line soc-media">
                 <label for="skype" class="worksheet-form__label soc-media__item soc-media__item-skype">Skype</label>
                 <input id="skype" class="worksheet-form__input" value="">
             </div>
-            <div class="worksheet-form__line soc-media__line">
-                <label for="telegram" class="worksheet-form__label  soc-media__item soc-media__item-telegram">Telegram</label>
+            <div class="worksheet-form__line soc-media">
+                <label for="telegram" class="worksheet-form__label soc-media__item soc-media__item-telegram">Telegram</label>
                 <input id="telegram" class="worksheet-form__input" value="">
             </div>
-            <div class="worksheet-form__line soc-media__line">
-                <label for="linkedin" class="worksheet-form__label  soc-media__item soc-media__item-linkedin">Linkedin</label>
+            <div class="worksheet-form__line soc-media">
+                <label for="linkedin" class="worksheet-form__label soc-media__item soc-media__item-linkedin">Linkedin</label>
                 <input id="linkedin" class="worksheet-form__input" value="">
             </div>
-            <div class="worksheet-form__line soc-media__line">
-                <label for="github" class="worksheet-form__label  soc-media__item soc-media__item-github">Github</label>
+            <div class="worksheet-form__line soc-media">
+                <label for="github" class="worksheet-form__label soc-media__item soc-media__item-github">Github</label>
                 <input id="github" class="worksheet-form__input" value="">
             </div>
             <div class="worksheet-form__line last-line">
@@ -168,6 +190,10 @@
                     <input id="resume" class="worksheet-form__input" value="">
                 </div>
             </div>
+        </div>
+        <div class="worksheet-form__buttons">
+            <a href="#" class="the-button worksheet-form__public-link">Дивитися публічний профіль</a>
+            <button type="submit" class="the-button worksheet-form__button">Оновити профiль</button>
         </div>
     </div>
 
