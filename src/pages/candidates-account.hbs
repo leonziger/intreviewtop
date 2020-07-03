@@ -4,61 +4,62 @@
         <section class="dashboard">
             <div class="dashboard__section">
                 <h1 class="dashboard__section-title">Мiй акаунт</h1>
-                <div class="fraimed-container candidates-account__container">
+                <form action="" class="candidates-account__form">
                     <div class="candidates-account">
-                        <div class="candidates-account__first-line">
-                            <div class="candidates-account__top">
-                                <div class="candidates-account__image-wrap">
-                                    <img src="../images/candidates-account_person.png" alt="" class="candidates-account__image">
-                                </div>
-                                <div class="candidates-account__info">
-                                    <div class="base__title candidates-account__name">Дмитро Пенчук</div>
-                                    <div class="candidates-account__job">
-                                        <div class="candidates-account__position">HR</div> in
-                                        <a href="#" class="candidates-account__company">Interview.top</a>
+                        <div class="fraimed-container candidates-account__container part1">
+                            <div class="candidates-account__first-line">
+                                <div class="candidates-account__top">
+                                    <div class="candidates-account__image-wrap">
+                                        <img src="../images/candidates-account_person.png" alt="" class="candidates-account__image">
                                     </div>
-                                    <button type="submit" class="the-button candidates-account__button">Змiнити фото</button>
+                                    <div class="candidates-account__info">
+                                        <div class="base__title candidates-account__name">Дмитро Пенчук</div>
+                                        <div class="candidates-account__job">
+                                            <div class="candidates-account__position">HR</div> in
+                                            <a href="#" class="candidates-account__company">Interview.top</a>
+                                        </div>
+                                        <button type="submit" class="the-button candidates-account__button">Змiнити фото</button>
+                                    </div>
                                 </div>
+                                <div class="base__notes candidates-account__date">На сайтi з 04.06.2020</div>
                             </div>
-                            <div class="base__notes candidates-account__date">На сайтi з 04.06.2020</div>
+
+                            <div class="worksheet-form__line">
+                                <label for="ac-name" class="worksheet-form__label candidates-account__label">Ім'я та прізвище</label>
+                                <input id="ac-name" class="worksheet-form__input" value="Дмитро Пенчук">
+                            </div>
+                            <div class="worksheet-form__line">
+                                <label for="af-position" class="worksheet-form__label candidates-account__label">Позицiя</label>
+                                <input id="af-position" class="worksheet-form__input" value="HR">
+                            </div>
+                            <div class="worksheet-form__line company">
+                                <label for="af-company" class="worksheet-form__label candidates-account__label">Компанiя</label>
+                                <input id="af-company" class="worksheet-form__input" value="Interview.top">
+                            </div>
                         </div>
-                        <div class="candidates-account__form">
-                            <form action="" class="account-form">
-                                <div class="worksheet-form__line">
-                                    <label for="ac-name" class="worksheet-form__label candidates-account__label">Ім'я та прізвище</label>
-                                    <input id="ac-name" class="worksheet-form__input" value="Дмитро Пенчук">
-                                </div>
-                                <div class="worksheet-form__line">
-                                    <label for="af-position" class="worksheet-form__label candidates-account__label">Позицiя</label>
-                                    <input id="af-position" class="worksheet-form__input" value="HR">
-                                </div>
-                                <div class="worksheet-form__line company">
-                                    <label for="af-company" class="worksheet-form__label candidates-account__label">Компанiя</label>
-                                    <input id="af-company" class="worksheet-form__input" value="Interview.top">
-                                </div>
-                                <div class="worksheet-form__line">
-                                    <label for="af-email" class="worksheet-form__label candidates-account__label">Email</label>
-                                    <input id="af-email" class="worksheet-form__input" value="RandomEmail@gmail.com">
-                                </div>
-                                <div class="worksheet-form__line">
-                                    <label for="af-phone" class="worksheet-form__label candidates-account__label">Моб.Телефон</label>
-                                    <input id="af-phone" class="worksheet-form__input" value="(093) 093-0520">
-                                </div>
-                                <div class="worksheet-form__line soc-media">
-                                    <label for="af-skype" class="worksheet-form__label candidates-account__label soc-media__item soc-media__item-skype">Skype</label>
-                                    <input id="af-skype" class="worksheet-form__input" value="">
-                                </div>
-                                <div class="worksheet-form__line soc-media">
-                                    <label for="af-telegram" class="worksheet-form__label soc-media__item soc-media__item-telegram candidates-account__label">Telegram</label>
-                                    <input id="af-telegram" class="worksheet-form__input" value="">
-                                </div>
-                                <div class="candidates-account__form-buttons">
-                                    <button type="submit" class="the-button candidates-account__submit">Зберегти</button>
-                                </div>
-                            </form>
+                        <div class="fraimed-container candidates-account__container part2">
+                            <div class="worksheet-form__line">
+                                <label for="af-email" class="worksheet-form__label candidates-account__label">Email</label>
+                                <input id="af-email" class="worksheet-form__input" value="RandomEmail@gmail.com">
+                            </div>
+                            <div class="worksheet-form__line">
+                                <label for="af-phone" class="worksheet-form__label candidates-account__label">Моб.Телефон</label>
+                                <input id="af-phone" class="worksheet-form__input" value="(093) 093-0520">
+                            </div>
+                            <div class="worksheet-form__line soc-media">
+                                <label for="af-skype" class="worksheet-form__label candidates-account__label soc-media__item soc-media__item-skype">Skype</label>
+                                <input id="af-skype" class="worksheet-form__input" value="">
+                            </div>
+                            <div class="worksheet-form__line soc-media">
+                                <label for="af-telegram" class="worksheet-form__label soc-media__item soc-media__item-telegram candidates-account__label">Telegram</label>
+                                <input id="af-telegram" class="worksheet-form__input" value="">
+                            </div>
+                            <div class="candidates-account__form-buttons">
+                                <button type="submit" class="the-button candidates-account__submit">Зберегти</button>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </form>
             </div>
         </section>
     </div>

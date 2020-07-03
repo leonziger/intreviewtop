@@ -163,6 +163,10 @@ h2, .h2 {
   font-weight: 600;
 }
 
+.red {
+  color: $red;
+}
+
 .hidden575 {
   @media(max-width: 575px) {
     display: none;

@@ -72,6 +72,18 @@
     padding-top: 19px;
     margin-bottom: 18px;
 
+    &:after {
+      content: '';
+      width: 16px;
+      height: 16px;
+      display: inline-block;
+      background-image: url(../images/checked.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+      margin-left: 9px;
+      padding-top: 1px;
+    }
+    
     @media(max-width: 575px) {
       padding-top: 10px;
       margin-bottom: 10px;
@@ -127,15 +139,13 @@
   }
 
   &__form {
-    max-width: 600px;
-    width: 100%;
 
     &-buttons {
+      max-width: 600px;
+      width: 100%;
       display: flex;
       justify-content: center;
-      padding-top: 35px;
-      padding-left: 55px;
-      padding-bottom: 45px;
+      padding: 35px 0 45px 55px;
 
       @media(max-width: 819px) {
         padding: 0 0 20px 0;
@@ -150,6 +160,11 @@
     @media(max-width: 575px) {
       height: 35px;
     }
+  }
+
+  .part1 {
+    padding-bottom: 12px;
+    margin-bottom: 18px;
   }
 }
 

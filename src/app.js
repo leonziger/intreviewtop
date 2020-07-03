@@ -8,6 +8,8 @@ import './components/reg-form/reg-form';
 import './components/search-form/search-form';
 import './components/salary-filter/salary-filter';
 import './components/dropdown/dropdown';
+import './components/worksheet-form/worksheet-form';
+import './components/candidates-settings/candidates-settings';
 
 const filterTitle = $('.filter__title');
 const moreInfo = $('.more-info');

@@ -1,0 +1,170 @@
+.candidates-settings {
+  position: relative;
+
+  @media(max-width: 767px) {
+    padding-top: 60px;
+  }
+
+  .candidates-settings {
+
+    &__recruiter-link {
+      position: absolute;
+      display: block;
+      top: -10px;
+      right: 0;
+      text-decoration: none;
+      box-shadow: none;
+      border: 1px solid $blue;
+      color: $blue;
+      border-radius: 2px;
+      background-color: transparent;
+      padding: 13px 36px;
+
+      @media(max-width: 991px) {
+        padding: 10px 20px;
+        font-size: 14px;
+        line-height: 1.2;
+        top: 0;
+      }
+
+      @media(max-width: 575px) {
+        padding: 10px;
+        font-size: 12px;
+        line-height: 1.25;
+      }
+
+      &:hover {
+        background-color: $blue;
+        color: #fff;
+      }
+    }
+  }
+
+  &__columns {
+
+    @media(max-width: 1099px) {
+      flex-direction: column;
+    }
+  }
+
+  &__container-aside {
+    padding: 20px 17px;
+
+    @media(max-width: 1099px) {
+      padding: 20px 20px 0;
+    }
+  }
+
+  &__container-main {
+    padding: 33px 41px 31px;
+  }
+
+  &__aside {
+    @media(max-width: 1099px) {
+      margin-bottom: 1px;
+    }
+  }
+
+  &__tabs {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__tab {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 38px;
+
+    @media(max-width: 1099px) {
+      margin-bottom: 16px;
+    }
+
+    @media(max-width: 991px) {
+      width: 50%;
+      margin-bottom: 20px;
+    }
+
+    @media(max-width: 575px) {
+      width: 100%;
+    }
+
+    &:hover,
+    &.active-tab {
+      .candidates-settings__tab-title {
+        color: $black;
+      }
+
+      .candidates-settings__tab-icon {
+        svg {
+          stroke: $black;
+        }
+      }
+    }
+
+    &-title {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 1.4;
+      letter-spacing: 0.05em;
+      margin-left: 12px;
+
+      @media(max-width: 767px) {
+        font-size: 14px;
+        line-height: 1.2;
+      }
+    }
+
+    &-icon {
+      margin-bottom: -5px;
+    }
+
+    &:last-child {
+      @media(min-width: 1100px) {
+        margin-bottom: 3px;
+      }
+    }
+  }
+
+  &__buttons {
+    padding: 1px 23px 0 0;
+    display: flex;
+    justify-content: flex-end;
+
+    @media(max-width: 767px) {
+      padding: 1px;
+      justify-content: center;
+    }
+  }
+
+  &__content {
+    display: none;
+
+    &.active-content {
+      display: block;
+    }
+  }
+
+  &__submit {
+    padding: 14px 56px;
+
+    @media(max-width: 767px) {
+      height: 35px;
+      font-size: 14px;
+      line-height: 1.2;
+      padding: 14px 36px;
+    }
+  }
+}
+
+.e-settings {
+  width: 20px;
+  height: 20px;
+  fill: none;
+  stroke: $lightgray;
+
+  &_trash {
+    stroke: $red;
+  }
+}

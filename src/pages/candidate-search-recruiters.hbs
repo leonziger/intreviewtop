@@ -1,0 +1,112 @@
+{{> main-header }}
+<div class="main-content dashboard__content">
+    <div class="container">
+        <section class="candidate-recruiters">
+            <div class="dashboard dashboard__two-columns candidate-recruiters__columns">
+                <div class="inner-container__small dashboard__aside candidate-recruiters__aside">
+                    <div class="fraimed-container candidate-recruiters__container">
+                        <div class="applicant__image">
+                            <img src="./images/applicant.png" alt="">
+                        </div>
+                        <div class="applicant__person">
+                            <div class="applicant__name-surname">
+                                <div class="applicant__name">Дмитро</div>
+                                <div class="applicant__surname">Пенчук</div>
+                            </div>
+                            <div class="applicant__job">
+                                <div class="applicant__position">HR</div> in
+                                <a href="#" class="applicant__company">Interview.top</a>
+                            </div>
+                            <div class="applicant__social-media">
+                                {{> social-media }}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fraimed-container candidate-recruiters__buttons">
+                        <button class="the-button candidate-recruiters__button">Вiдкрити контакти</button>
+                        <button class="the-button candidate-recruiters__button">Пропозиція не цікава</button>
+                        <button class="the-button candidate-recruiters__button button-red">Відмовити</button>
+                    </div>
+                </div>
+                <div class="inner-container__big dashboard__main">
+                    <div class="fraimed-container candidate-recruiters__container-main">
+                        <ul class="candidate-recruiters__letters">
+                           <li class="candidate-recruiters__letter">
+                               <div class="candidate-recruiters__letter-date">04.06.2020</div>
+                               <ul class="candidate-recruiters__messages">
+                                   <li class="candidate-recruiters__message">
+                                       <div class="candidate-recruiters__message-text">
+                                           <div class="candidate-recruiters__message-icon">
+                                               <img src="./images/correspond1.png" alt="">
+                                           </div>
+                                           <div class="candidate-recruiters__message-info">
+                                               <div class="candidate-recruiters__message-title">Дмитро Пенчук</div>
+                                               <div class="candidate-recruiters__message-body">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. </div>
+                                           </div>
+                                       </div>
+                                       <div class="candidate-recruiters__message-time">11:30</div>
+                                   </li>
+                                   <li class="candidate-recruiters__message">
+                                       <div class="candidate-recruiters__message-text">
+                                           <div class="candidate-recruiters__message-icon">
+                                               <img src="./images/correspond2.png" alt="">
+                                           </div>
+                                           <div class="candidate-recruiters__message-info">
+                                               <div class="candidate-recruiters__message-title">Олег Левченко</div>
+                                               <div class="candidate-recruiters__message-body">Velit officia consequat duis enim velit mollit. Amet minim mollit non deserunt ullamco est sit aliqua.</div>
+                                           </div>
+                                       </div>
+                                       <div class="candidate-recruiters__message-time">11:30</div>
+                                   </li>
+                                   <li class="candidate-recruiters__message candidate-recruiters__message-system">
+                                       <div class="candidate-recruiters__message-text">
+                                           <div class="candidate-recruiters__message-icon">
+                                           </div>
+                                           <div class="candidate-recruiters__message-info">
+                                               <div class="offer__contact offer__contact_opened">Кандидат вiдкрив вам свої контакти</div>
+                                           </div>
+                                       </div>
+                                       <div class="candidate-recruiters__message-time">11:30</div>
+                                   </li>
+                                   <li class="candidate-recruiters__message">
+                                       <div class="candidate-recruiters__message-text">
+                                           <div class="candidate-recruiters__message-icon">
+                                               <img src="./images/correspond1.png" alt="">
+                                           </div>
+                                           <div class="candidate-recruiters__message-info">
+                                               <div class="candidate-recruiters__message-title">Дмитро Пенчук</div>
+                                               <div class="candidate-recruiters__message-body">Exercitation veniam consequat sunt nostrud ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. </div>
+                                           </div>
+                                       </div>
+                                       <div class="candidate-recruiters__message-time">11:30</div>
+                                   </li>
+                                   <li class="candidate-recruiters__message">
+                                       <div class="candidate-recruiters__message-text">
+                                           <div class="candidate-recruiters__message-icon">
+                                               <img src="./images/correspond2.png" alt="">
+                                           </div>
+                                           <div class="candidate-recruiters__message-info">
+                                               <div class="candidate-recruiters__message-title">Олег Левченко</div>
+                                               <div class="candidate-recruiters__message-body">Ok, velit officia consequat duis enim velit mollit!</div>
+                                           </div>
+                                       </div>
+                                       <div class="candidate-recruiters__message-time">11:30</div>
+                                   </li>
+                               </ul>
+                           </li>
+                        </ul>
+                        <form action="" class="messages-form">
+                            <div class="messages-form__line">
+                                <div class="messages-form__input-wrap">
+                                    <textarea class="messages-form__input" placeholder="Написати повідомлення"></textarea>
+                                </div>
+                                <button type="submit" class="the-button messages-form__submit">Надіслати</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+{{> main-footer }}

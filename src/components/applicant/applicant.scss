@@ -102,7 +102,6 @@
   }
 
   &__info {
-    //margin-right: 10px;
 
     @media(max-width: 1099px) {
       max-width: 100%;
@@ -294,6 +293,26 @@
     &-time {
       color: $blue;
     }
+  }
+
+  &__job {
+    display: flex;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.05em;
+    color: $black;
+    margin-top: 1px;
+    margin-bottom: 11px;
+  }
+
+  &__position {
+    padding-right: 5px;
+  }
+
+  &__company {
+    padding-left: 5px;
   }
 }
 

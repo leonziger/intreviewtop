@@ -1,0 +1,72 @@
+{{> main-header }}
+<div class="main-content dashboard__content">
+    <div class="container">
+        <section class="candidates-settings">
+            <a href="#" class="the-button candidates-settings__recruiter-link">Перейти у профіль рекрутера</a>
+            <h1 class="candidates-settings__title">Налаштування</h1>
+            <div class="dashboard dashboard__two-columns candidates-settings__columns">
+                <div class="inner-container__small dashboard__aside candidates-settings__aside">
+                    <div class="fraimed-container candidates-settings__container-aside">
+                        <ul class="candidates-settings__tabs">
+                            <li class="candidates-settings__tab active-tab">
+                                <div class="candidates-settings__tab-icon">
+                                    {{> icon iconName="e-mail" classNames="e-settings" }}
+                                </div>
+                                <div class="candidates-settings__tab-title">Змінити пошту</div>
+                            </li>
+                            <li class="candidates-settings__tab">
+                                <div class="candidates-settings__tab-icon">
+                                    {{> icon iconName="e-lock" classNames="e-settings" }}
+                                </div>
+                                <div class="candidates-settings__tab-title">Змінити пароль</div>
+                            </li>
+                            <li class="candidates-settings__tab">
+                                <div class="candidates-settings__tab-icon">
+                                    {{> icon iconName="e-globe" classNames="e-settings" }}
+                                </div>
+                                <div class="candidates-settings__tab-title">Мова інтерфейсу</div>
+                            </li>
+                            <li class="candidates-settings__tab">
+                                <div class="candidates-settings__tab-icon">
+                                    {{> icon iconName="e-trash" classNames="e-settings e-settings_trash" }}
+                                </div>
+                                <div class="candidates-settings__tab-title red">Видалити акаунт</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="inner-container__big dashboard__main">
+                    <div class="fraimed-container candidates-settings__container-main">
+                        <form action="" class="settings-form">
+                            <ul class="candidates-settings__contents">
+                                <li class="candidates-settings__content active-content">
+                                    <div class="worksheet-form__line settings-form__line">
+                                        <label for="e-name" class="worksheet-form__label settings-form__label">Ім'я та прізвище</label>
+                                        <input type="text" id="e-name" class="worksheet-form__input" value="Дмитро Пенчук">
+                                    </div>
+                                    <div class="worksheet-form__line settings-form__line">
+                                        <label for="e-position" class="worksheet-form__label settings-form__label">Позиція</label>
+                                        <input type="text" id="e-position" class="worksheet-form__input" value="HR">
+                                    </div>
+                                </li>
+                                <li class="candidates-settings__content">
+                                    Контент про змiну паролю
+                                </li>
+                                <li class="candidates-settings__content">
+                                    Контент про змiну мови iнтерфейсу
+                                </li>
+                                <li class="candidates-settings__content">
+                                    Видалення аккаунту
+                                </li>
+                            </ul>
+                            <div class="candidates-settings__buttons">
+                                <button type="submit" class="the-button candidates-settings__submit">Зберегти</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+{{> main-footer }}
