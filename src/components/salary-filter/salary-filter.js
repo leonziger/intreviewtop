@@ -1,4 +1,4 @@
-import $ from 'jquery';
+import $ from'jquery';
 import rangesliderJs from 'rangeslider-js';
 
 const leftSlider = $('.multi-range__left');
