@@ -167,6 +167,14 @@ h2, .h2 {
   color: $red;
 }
 
+.lightgray {
+  color: $lightgray;
+}
+
+.blue {
+  color: $blue;
+}
+
 .hidden575 {
   @media(max-width: 575px) {
     display: none;

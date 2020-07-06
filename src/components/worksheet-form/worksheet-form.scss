@@ -115,6 +115,7 @@
 
     &.last-line {
       padding-bottom: 32px;
+      position: relative;
 
       @media(max-width: 767px) {
         padding-bottom: 16px;
@@ -206,19 +207,6 @@
           left: 0;
         }
       }
-
-      &:after {
-        content: 'Виберiть файл з CV';
-        position: absolute;
-        left: 0;
-        bottom: -32px;
-        display: block;
-        font-weight: normal;
-        font-size: 12px;
-        line-height: 15px;
-        letter-spacing: 0.05em;
-        color: $lightgray;
-      }
     }
 
     @media(max-width: 819px) {
@@ -248,16 +236,6 @@
       white-space: nowrap;
       overflow: hidden;
 
-      //&:hover {
-      //  &:after {
-      //    content: 'X';
-      //    display: inline-block;
-      //    margin-left: 10px;
-      //    color: $red;
-      //    text-align: center;
-      //  }
-      //}
-
       @media(max-width: 819px) {
         width: 100%;
       }
@@ -267,6 +245,45 @@
         font-size: 14px;
         line-height: 1.2;
         padding: 7px 35px;
+      }
+    }
+  }
+
+  &__files {
+    position: absolute;
+    left: 263px;
+    bottom: 0;
+    display: block;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.05em;
+    color: $lightgray;
+
+    @media(max-width: 819px) {
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+    }
+
+
+    &-item {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+
+      &:hover {
+        color: $red;
+        cursor: pointer;
+
+        &:after {
+          content: 'X';
+          display: inline-block;
+          margin-left: 10px;
+          color: $red;
+          text-align: center;
+        }
       }
     }
   }
@@ -444,11 +461,5 @@
         margin-right: 10px;
       }
     }
-  }
-}
-
-.after-off {
-  &:after {
-    display: none;
   }
 }

@@ -1,0 +1,180 @@
+.vacancy {
+  position: relative;
+  margin-bottom: 18px;
+
+  &__thumbler {
+
+    @media(max-width: 767px) {
+      position: absolute;
+      top: 3px;
+      right: 0;
+    }
+
+    @media(max-width: 575px) {
+      top: 1px;
+    }
+  }
+
+  &__line {
+    &-first {
+      align-items: center;
+
+      @media(max-width: 767px) {
+        align-items: flex-start;
+      }
+    }
+
+    &-second {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 13px;
+
+      @media(max-width: 575px) {
+        margin-bottom: 10px;
+      }
+    }
+
+    &-third {
+      margin-bottom: 2px;
+    }
+  }
+
+  &__date {
+    margin-right: -3px;
+  }
+
+  &__experience {
+    display: flex;
+
+    @media(max-width: 767px) {
+      flex-direction: column;
+    }
+
+    .candidate__item-line {
+      padding-right: 28px;
+
+      @media(max-width: 767px) {
+        margin-bottom: 10px;
+        padding-right: 0;
+      }
+
+      @media(max-width: 575px) {
+        font-size: 14px;
+        line-height: 1.2;
+      }
+    }
+  }
+
+  &__salary-location {
+    display: flex;
+
+    @media(max-width: 575px) {
+      align-items: center;
+    }
+  }
+
+  &__salary {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.4;
+    letter-spacing: 0.05em;
+    color: $black;
+    padding-right: 25px;
+
+    @media(max-width: 575px) {
+      font-size: 14px;
+      line-height: 1.2;
+    }
+
+    &_right {
+      padding: 0;
+      margin-right: -5px;
+      color: $gray;
+    }
+  }
+
+  &__location {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.4;
+    letter-spacing: 0.05em;
+    color: $black;
+    display: flex;
+    align-items: center;
+
+    @media(max-width: 575px) {
+      font-size: 14px;
+      line-height: 1.2;
+    }
+
+    &:before {
+      content: '';
+      width: 14px;
+      height: 18px;
+      display: block;
+      background-image: url(../images/marker.svg);
+      margin-right: 5px;
+      margin-top: 1px;
+    }
+  }
+
+  &__description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.4;
+    letter-spacing: 0.03em;
+    color: $gray;
+    max-width: 580px;
+    margin-bottom: 28px;
+
+    @media(max-width: 575px) {
+      font-size: 14px;
+      line-height: 1.2;
+      margin-bottom: 18px;
+    }
+
+    &_empty {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__tags {
+    display: flex;
+    margin-bottom: 24px;
+  }
+
+  &__tag {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.05em;
+    color: $gray;
+    border: 1px solid $gray;
+    border-radius: 2px;
+    padding: 4px 8px;
+    margin-right: 7px;
+  }
+
+  &__contact {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.4;
+    letter-spacing: 0.05em;
+    color: $black;
+    margin-bottom: 15px;
+
+    @media(max-width: 575px) {
+      font-size: 14px;
+      line-height: 1.2;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__recruiter {
+    color: $blue;
+  }
+
+  &__company {
+    font-weight: 600;
+  }
+}

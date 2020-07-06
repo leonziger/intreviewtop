@@ -9,6 +9,19 @@
 }
 
 .inner-container {
+  max-width: 510px;
+  width: 100%;
+
+  @media(max-width: 1099px) {
+    margin: 0 5px;
+  }
+
+  @media(max-width: 991px) {
+    margin: 0;
+    max-width: 100%;
+  }
+
+
   &__big {
     max-width: 776px;
     width: 100%;

@@ -10,6 +10,8 @@ import './components/salary-filter/salary-filter';
 import './components/dropdown/dropdown';
 import './components/worksheet-form/worksheet-form';
 import './components/candidates-settings/candidates-settings';
+import './components/vacancy/vacancy';
+import './components/subscribes/subscribes';
 
 const filterTitle = $('.filter__title');
 const moreInfo = $('.more-info');

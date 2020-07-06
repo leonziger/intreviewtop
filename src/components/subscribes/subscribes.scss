@@ -1,0 +1,81 @@
+.subscribes {
+
+  &__columns {
+
+    @media(max-width: 1099px) {
+      flex-direction: row;
+
+      @media(max-width: 991px) {
+        flex-direction: column;
+      }
+    }
+  }
+
+  &__container {
+    padding: 33px 31px 8px 33px;
+    margin-bottom: 24px;
+
+    @media(max-width: 767px) {
+      padding: 33px;
+    }
+  }
+
+  &-form {
+    margin-top: 41px;
+    transition: $delay;
+  }
+
+  &__activation {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+
+    &-title {
+      display: block;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 1.2;
+      letter-spacing: 0.05em;
+      cursor: pointer;
+    }
+
+    &-label {
+      margin: 3px 0 0;
+    }
+
+    &-toggle {
+      &:checked {
+        & ~ .subscribes__activation-title {
+          color: $blue;
+        }
+      }
+
+      &:not(:checked) {
+        & ~ .subscribes__activation-title {
+          color: $lightgray;
+        }
+      }
+    }
+
+  }
+
+  &__label {
+    max-width: 152px;
+  }
+
+  &__select,
+  &__input {
+    max-width: 296px;
+    width: 100%;
+  }
+
+}
+
+
+.activated {
+  color: $blue;
+}
+.transparent {
+  opacity: 0.4;
+  transition: $delay;
+}

@@ -4,7 +4,7 @@
   &__toggle {
     display: none;
 
-    & + label {
+    & + .thumbler__label {
       display: block;
       position: relative;
       cursor: pointer;
@@ -14,7 +14,7 @@
     }
 
     &-round {
-      & + label {
+      & + .thumbler__label {
         padding: 2px;
         width: 34px;
         height: 18px;
@@ -53,7 +53,7 @@
 
       &:checked {
 
-        & + label {
+        & + .thumbler__label {
           color: $black;
 
           &:before {

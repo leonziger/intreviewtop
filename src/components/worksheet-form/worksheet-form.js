@@ -2,25 +2,25 @@ import $ from 'jquery';
 
 const wFormInputFile = $('.worksheet-form__input-file');
 
-// wFormInputFile.change(function(){
-//   const filename = $(this).val().replace(/.*\\/, "");
-//
-//   if ( filename.length > 0 ) {
-//     $('.worksheet-form__input').html(filename);
-//     $('.worksheet-form__input-wrapper').addClass('after-off');
-//   }
-// });
-
 wFormInputFile.change(({ target: { files } }) => handleFiles(files));
 
 function handleFiles(files) {
-  let arr = [ files ];
-  let nameOfFile = arr[0][0].name;
+  const arr = [ files ];
 
-  const filename = nameOfFile.replace(/.*\\/, "");
+  const filesList = $('.worksheet-form__files');
+  const div = document.createElement('div');
 
-  if ( filename.length > 0 ) {
-    $('.worksheet-form__input').html(filename);
-    $('.worksheet-form__input-wrapper').addClass('after-off');
-  }
+  filesList.addClass('files-list');
+  div.textContent = arr[0][0].name;
+  div.className = 'worksheet-form__files-item';
+  filesList.html('');
+  filesList.append(div);
+
+  $(div).click(function(){
+    const currentIndex = $(this).index();
+
+    arr.splice(currentIndex, 1);
+    $(this).remove();
+    filesList.html('Виберiть файл з CV');
+  });
 }
