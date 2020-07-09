@@ -140,7 +140,8 @@
 
   &__tags {
     display: flex;
-    margin-bottom: 24px;
+    margin-bottom: 12px;
+    flex-wrap: wrap;
   }
 
   &__tag {
@@ -153,6 +154,7 @@
     border-radius: 2px;
     padding: 4px 8px;
     margin-right: 7px;
+    margin-bottom: 10px;
   }
 
   &__contact {
