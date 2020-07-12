@@ -1,0 +1,102 @@
+.star {
+  position: relative;
+  padding-top: 5px;
+  cursor: pointer;
+  transition: $delay;
+
+  @media(max-width: 767px) {
+    padding-top: 2px;
+  }
+
+  @media(max-width: 575px) {
+    padding-top: 0;
+  }
+
+  &:before {
+    content: '';
+    display: block;
+    width: 15px;
+    height: 15px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../images/star.svg);
+  }
+
+  &:hover {
+    .star__inform {
+      display: block;
+    }
+  }
+
+  &__container {
+    position: absolute;
+    left: -50%;
+    transform: translateX(-38%);
+    top: -38px;
+
+    @media(max-width: 1199px) {
+      display: none;
+    }
+  }
+
+  &__inform {
+    display: none;
+    position: relative;
+
+    &:before {
+      content: 'Додати в обране';
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 1.25;
+      letter-spacing: 0.05em;
+      color: $lightgray;
+      white-space: nowrap;
+      padding: 8px 16px;
+      border-radius: 2px;
+      background: rgba(169, 169, 202, 0.1);
+    }
+
+    &:after {
+      content: '';
+      display: block;
+      border: 10px solid transparent;
+      border-top: 10px solid rgba(169, 169, 202, 0.1);
+      position: absolute;
+      top: 125%;
+      left: 50%;
+      transform: translateX(-55%);
+    }
+  }
+
+  &_rated {
+
+    &:before {
+      content: '';
+      display: block;
+      width: 15px;
+      height: 15px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: url(../images/star_filled.svg);
+    }
+
+    .star__inform {
+
+      &:before {
+        content: 'Видалити з обраного';
+      }
+
+      &:after {
+        transform: translateX(-75%);
+      }
+
+    }
+
+    &:hover {
+      .star__inform {
+        display: block;
+      }
+    }
+  }
+}
+

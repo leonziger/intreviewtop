@@ -9,7 +9,6 @@ if (dropdownIcon.length > 0) {
 
     dropdownContainer.toggle();
     $(this).toggleClass('dropdown_active');
-
   });
 
   $(document).on('click', function(e) {

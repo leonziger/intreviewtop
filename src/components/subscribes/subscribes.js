@@ -1,6 +1,5 @@
 import $ from 'jquery';
 
-
 $('.subscribes__activation-title').click(function(e){
   const parentBlock = $(e.target).parents('.subscribes__block');
   const title = parentBlock.children().find('.subscribes__activation-title');

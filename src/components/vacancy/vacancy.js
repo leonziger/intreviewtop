@@ -6,9 +6,6 @@ $('.vacancy__thumbler-toggle').click(function(e) {
   const thumbler = parentBlock.children().find('.vacancy__thumbler-toggle');
   const trash = parentBlock.children().find('.vacancy__trash');
 
-  console.log(e.target);
-  console.log(parentBlock);
-
   if ( thumbler.is(":checked")) {
     parentBlock.removeClass('transparent');
     title.removeClass('lightgray');
