@@ -1,0 +1,30 @@
+.popup {
+  position: absolute;
+  left: -50%;
+  transform: translateX(-38%);
+  top: -43px;
+
+  &__inform {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.05em;
+    color: $lightgray;
+    white-space: nowrap;
+    padding: 8px 16px;
+    border-radius: 2px;
+    background: rgba(169, 169, 202, 0.1);
+    position: relative;
+
+    &:after {
+      content: '';
+      display: block;
+      border: 10px solid transparent;
+      border-top: 10px solid rgba(169, 169, 202, 0.1);
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}

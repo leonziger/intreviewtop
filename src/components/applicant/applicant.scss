@@ -9,14 +9,14 @@
 
 .applicants {
 
+  &__container {
+    padding: 26px 32px 30px;
+  }
+
   &__search {
 
     &-form {
       margin-bottom: 14px;
-
-      .dashboard__container {
-        padding: 26px 32px 22px;
-      }
     }
 
     &-results {

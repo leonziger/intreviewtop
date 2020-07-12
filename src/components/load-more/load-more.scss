@@ -1,0 +1,23 @@
+.load-more {
+  display: flex;
+  justify-content: center;
+  padding: 34px 0;
+
+  &__button {
+    box-shadow: none;
+    padding: 13px 50px;
+    border: 1px solid $lightgray;
+    border-radius: 2px;
+    color: $lightgray;
+    background-color: transparent;
+    
+    &:hover {
+      background-color: $lightgray;
+      color: #fff;
+    }
+
+    @media(max-width: 767px) {
+
+    }
+  }
+}

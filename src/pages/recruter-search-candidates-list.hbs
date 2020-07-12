@@ -6,7 +6,7 @@
             <div class="dashboard dashboard__two-columns">
                 <div class="inner-container__big dashboard__main">
                     <div class="applicants__search-form">
-                        <div class="fraimed-container dashboard__container">
+                        <div class="fraimed-container applicants__container">
                             {{> search-form }}
                         </div>
                     </div>
@@ -23,9 +23,10 @@
                                     <div class="candidate">
                                         <div class="candidate__first-line">
                                             <div class="candidate__name-rating">
-                                                <a href="recruter-search-candidate.html" class="base__title candidate__name">Python Developer</a>
+                                                <a href="recruter-search-candidate.html" class="base__title candidate__name candidate__name_nowrap">Python Developer</a>
                                                 <div class="candidate__rating">
                                                     {{> icon iconName="star_filled" classNames="star" }}
+                                                    {{> popup-inform }}
                                                 </div>
                                             </div>
                                             <div class="candidate__date">Профiль вiд: 04.10.2020</div>
@@ -88,8 +89,8 @@
                                     <div class="candidate">
                                         <div class="candidate__first-line">
                                             <div class="candidate__name-rating">
-                                                <a href="recruter-search-candidate.html" class="base__title candidate__name">Python Developer</a>
-                                                <div class="candidate__rating">
+                                                <a href="recruter-search-candidate.html" class="base__title candidate__name candidate__name_nowrap">Python Developer</a>
+                                                <div class="candidate__rating popup-inform">
                                                     {{> icon iconName="star_filled" classNames="star" }}
                                                 </div>
                                             </div>
@@ -153,8 +154,8 @@
                                     <div class="candidate">
                                         <div class="candidate__first-line">
                                             <div class="candidate__name-rating">
-                                                <a href="recruter-search-candidate.html" class="base__title candidate__name">Python Developer</a>
-                                                <div class="candidate__rating">
+                                                <a href="recruter-search-candidate.html" class="base__title candidate__name candidate__name_nowrap">Python Developer</a>
+                                                <div class="candidate__rating popup-inform">
                                                     {{> icon iconName="star_filled" classNames="star" }}
                                                 </div>
                                             </div>
@@ -212,6 +213,7 @@
                                 </div>
                             </div>
                         </div>
+                        {{> load-more }}
                     </div>
                 </div>
                 <div class="inner-container__small dashboard__aside">
