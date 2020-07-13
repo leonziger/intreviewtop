@@ -1,209 +1,207 @@
-<form action="" class="worksheet-form">
-    <div class="worksheet-form__tabs">
-        <input id="tab1" type="radio" name="tabs" class="worksheet-form__tab-input" checked>
-        <label class="worksheet-form__tab-name" for="tab1">Профiль</label>
-        <input id="tab2" type="radio" name="tabs" class="worksheet-form__tab-input">
-        <label class="worksheet-form__tab-name" for="tab2">Контакти<span class="hidden575"> та резюме</span></label>
-        <input id="tab3" type="radio" name="tabs" class="worksheet-form__tab-input">
-        <label class="worksheet-form__tab-name tab-interview" for="tab3">Інтерв'ю</label>
-        <div id="content1" class="worksheet-form__content">
-            <div class="worksheet-form__line">
-                <label for="category" class="worksheet-form__label">Категорiя</label>
-                <select id="category" name="category" class="worksheet-form__select">
-                    <option disabled>Выберiть категорiю</option>
-                    <option value="JavaScript">JavaScript</option>
-                    <option value="Front-End / HTML">Front-End / HTML</option>
-                    <option value="Node js">Node js</option>
-                    <option value="PHP">PHP</option>
-                    <option value="Python">Python</option>
-                    <option value="Ruby">Ruby</option>
-                    <option value="Android">Android</option>
-                    <option value="i0S / macOS">i0S / macOS</option>
-                    <option value="C/C++ / Embedded" selected>C/C++ / Embedded</option>
-                    <option value="Golang, Scala">Golang, Scala</option>
-                    <option value="Business Analyst">Business Analyst</option>
-                    <option value="Data Science">Data Science</option>
-                    <option value="Design / UX">Design / UX</option>
-                    <option value="Gamedev / Unity / AS3">Gamedev / Unity / AS3</option>
-                    <option value="Product Manager">Product Manager</option>
-                    <option value="Project Manager">Project Manager</option>
-                    <option value="QA Automation">QA Automation</option>
-                    <option value="QA Manual">QA Manual</option>
-                    <option value="SQL (DBA)">SQL (DBA)</option>
-                    <option value="Sysadmin / DevOps">Sysadmin / DevOps</option>
-                    <option value="Team LeadMarketing">Team LeadMarketing</option>
-                    <option value="Recruiting/HR">Recruiting/HR</option>
-                    <option value="Sales">Sales</option>
-                    <option value="Support">Support</option>
-                </select>
-            </div>
-            <div class="worksheet-form__line">
-                <label for="position" class="worksheet-form__label">Бажана посада</label>
-                <input id="position" class="worksheet-form__input" value="C++/Qt Developer">
-            </div>
-            <div class="worksheet-form__line">
-                <label for="salary" class="worksheet-form__label">Зарплатнi очiкування</label>
-                <input id="salary" class="worksheet-form__input mini-input" value="$1500">
-            </div>
-            <div class="worksheet-form__line">
-                <label for="city" class="worksheet-form__label">Мiсто</label>
-                <input id="city" class="worksheet-form__input" value="Київ">
-            </div>
-            <div class="worksheet-form__line not-centered">
-                <label for="skills" class="worksheet-form__label">Навички</label>
-                <div id="skills" class="worksheet-form__area tags">
-                    <div class="search-form__tags nowrap">
-                        <div class="base__notes search-form__tag">С++</div>
-                        <div class="base__notes search-form__tag">STL</div>
-                        <div class="base__notes search-form__tag">Qt</div>
-                        <div class="base__notes search-form__tag">QML</div>
-                        <div class="base__notes search-form__tag">Git</div>
-                        <div class="base__notes search-form__tag">Javascript</div>
-                        <div class="base__notes search-form__tag">Linux</div>
-                    </div>
+<form action="" class="worksheet-form" id="worksheet-form"></form>
+<ul class="worksheet-form__tabs">
+    <li class="worksheet-form__tab active-tab" for="tab1">Профiль</li>
+    <li class="worksheet-form__tab" for="tab2">Контакти<span class="hidden575"> та резюме</span></li>
+    <li class="worksheet-form__tab interview-tab" for="tab3">Інтерв'ю</li>
+</ul>
+<ul class="worksheet-form__contents">
+    <li id="content1" class="worksheet-form__content worksheet-form__content_thin active-content">
+        <div class="worksheet-form__line">
+            <label form="worksheet-form" for="category" class="worksheet-form__label">Категорiя</label>
+            <select form="worksheet-form" id="category" name="category" class="worksheet-form__select">
+                <option disabled>Выберiть категорiю</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="Front-End / HTML">Front-End / HTML</option>
+                <option value="Node js">Node js</option>
+                <option value="PHP">PHP</option>
+                <option value="Python">Python</option>
+                <option value="Ruby">Ruby</option>
+                <option value="Android">Android</option>
+                <option value="i0S / macOS">i0S / macOS</option>
+                <option value="C/C++ / Embedded" selected>C/C++ / Embedded</option>
+                <option value="Golang, Scala">Golang, Scala</option>
+                <option value="Business Analyst">Business Analyst</option>
+                <option value="Data Science">Data Science</option>
+                <option value="Design / UX">Design / UX</option>
+                <option value="Gamedev / Unity / AS3">Gamedev / Unity / AS3</option>
+                <option value="Product Manager">Product Manager</option>
+                <option value="Project Manager">Project Manager</option>
+                <option value="QA Automation">QA Automation</option>
+                <option value="QA Manual">QA Manual</option>
+                <option value="SQL (DBA)">SQL (DBA)</option>
+                <option value="Sysadmin / DevOps">Sysadmin / DevOps</option>
+                <option value="Team LeadMarketing">Team LeadMarketing</option>
+                <option value="Recruiting/HR">Recruiting/HR</option>
+                <option value="Sales">Sales</option>
+                <option value="Support">Support</option>
+            </select>
+        </div>
+        <div class="worksheet-form__line">
+            <label form="worksheet-form" for="position" class="worksheet-form__label">Бажана посада</label>
+            <input form="worksheet-form" id="position" class="worksheet-form__input" value="C++/Qt Developer">
+        </div>
+        <div class="worksheet-form__line">
+            <label form="worksheet-form" for="salary" class="worksheet-form__label">Зарплатнi очiкування</label>
+            <input form="worksheet-form" id="salary" class="worksheet-form__input mini-input" value="$1500">
+        </div>
+        <div class="worksheet-form__line">
+            <label form="worksheet-form" for="city" class="worksheet-form__label">Мiсто</label>
+            <input form="worksheet-form" id="city" class="worksheet-form__input" value="Київ">
+        </div>
+        <div class="worksheet-form__line not-centered">
+            <label for="skills" class="worksheet-form__label">Навички</label>
+            <div id="skills" class="worksheet-form__area tags">
+                <div class="search-form__tags nowrap">
+                    <div class="base__notes search-form__tag">С++</div>
+                    <div class="base__notes search-form__tag">STL</div>
+                    <div class="base__notes search-form__tag">Qt</div>
+                    <div class="base__notes search-form__tag">QML</div>
+                    <div class="base__notes search-form__tag">Git</div>
+                    <div class="base__notes search-form__tag">Javascript</div>
+                    <div class="base__notes search-form__tag">Linux</div>
                 </div>
             </div>
-            <div class="worksheet-form__line not-centered">
-                <label for="experience" class="worksheet-form__label">Досвід роботи</label>
-                <textarea id="experience" class="worksheet-form__area">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Velit officia consequat duis enim velit mollit. Amet minim mollit non deserunt ullamco est sit aliqua.</textarea>
-            </div>
-            <div class="worksheet-form__line">
-                <label for="experience-years" class="worksheet-form__label">Рокiв досвiду</label>
-                <input id="experience-years" class="worksheet-form__input mini-input" value="1 рiк">
-            </div>
-            <div class="worksheet-form__line not-centered expectations">
-                <label for="expectations" class="worksheet-form__label">Очiкування вiд роботи</label>
-                <textarea id="expectations" class="worksheet-form__area mini-area">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</textarea>
-            </div>
-            <div class="worksheet-form__line not-centered english-level">
-                <label for="english-level" class="worksheet-form__label">Рівень англійської</label>
-                <ul class="filter__skills" id="english-level">
-                    <li class="filter__skill">
-                        <input name="skills" type="radio" class="radio__input" id="skill1" value="None">
-                        <label for="skill1" class="filter__skill-checkbox radio__label">
-                            <span>None</span>
-                        </label>
-                    </li>
-                    <li class="filter__skill">
-                        <input name="skills" type="radio" class="radio__input" id="skill2" value="Beginer">
-                        <label for="skill2" class="filter__skill-checkbox radio__label">
-                            <span>Beginer</span>
-                        </label>
-                    </li>
-                    <li class="filter__skill">
-                        <input name="skills" type="radio" class="radio__input" id="skill3" value="Pre-intermediate">
-                        <label for="skill3" class="filter__skill-checkbox radio__label">
-                            <span>Pre-intermediate</span>
-                        </label>
-                    </li>
-                    <li class="filter__skill">
-                        <input name="skills" type="radio" class="radio__input" id="skill4" value="Intermediate">
-                        <label for="skill4" class="filter__skill-checkbox radio__label">
-                            <span>Intermediate</span>
-                        </label>
-                    </li>
-                    <li class="filter__skill">
-                        <input name="skills" type="radio" class="radio__input" id="skill5" value="Upper-intermediate">
-                        <label for="skill5" class="filter__skill-checkbox radio__label">
-                            <span>Upper-intermediate</span>
-                        </label>
-                    </li>
-                    <li class="filter__skill">
-                        <input name="skills" type="radio" class="radio__input" id="skill6" value="Advanced/Fluent">
-                        <label for="skill6" class="filter__skill-checkbox radio__label">
-                            <span>Advanced/Fluent</span>
-                        </label>
-                    </li>
-                </ul>
-            </div>
-            <div class="worksheet-form__line employment">
-                <label for="employment" class="worksheet-form__label">Рівень англійської</label>
-                <ul class="filter__employment-items" id="employment">
-                    <li class="filter__employment-item">
-                        <input name="employment" type="radio" id="employment3" value="Freelance" class="button__radio">
-                        <label for="employment3" class="filter__skill-checkbox button__label">
-                            <span>Freelance</span>
-                        </label>
-                    </li>
-                    <li class="filter__employment-item">
-                        <input name="employment" type="radio" id="employment1" value="Full-time" class="button__radio" checked>
-                        <label for="employment1" class="filter__skill-checkbox button__label">
-                            <span>Full-time</span>
-                        </label>
-                    </li>
-                    <li class="filter__employment-item">
-                        <input name="employment" type="radio" id="employment2" value="Part-time" class="button__radio">
-                        <label for="employment2" class="filter__skill-checkbox button__label">
-                            <span>Part-time</span>
-                        </label>
-                    </li>
-                </ul>
-            </div>
-            <div class="worksheet-form__line not-centered employment-type">
-                <label for="employment-type" class="worksheet-form__label">Вид зайнятості</label>
-                <ul class="filter__relocation" id="employment-type">
-                    <li class="filter__relocation-item">
-                        <input id="relocation1" class="thumbler__toggle thumbler__toggle-round" type="checkbox" checked>
-                        <label for="relocation1"class="thumbler__label"><span class="thumbler__title">Remote</span></label>
-                    </li>
-                    <li class="filter__relocation-item">
-                        <input id="relocation2" class="thumbler__toggle thumbler__toggle-round" type="checkbox">
-                        <label for="relocation2"class="thumbler__label"><span class="thumbler__title">Relocate</span></label>
-                    </li>
-                    <li class="filter__relocation-item">
-                        <input id="relocation3" class="thumbler__toggle thumbler__toggle-round" type="checkbox" checked>
-                        <label for="relocation3"class="thumbler__label"><span class="thumbler__title">Other city</span></label>
-                    </li>
-                </ul>
-            </div>
         </div>
-        <div id="content2" class="worksheet-form__content">
-            <div class="worksheet-form__line">
-                <label for="name" class="worksheet-form__label">Ім'я та прізвище</label>
-                <input id="name" class="worksheet-form__input" value="Дмитро Пенчук">
-            </div>
-            <div class="worksheet-form__line">
-                <label for="email" class="worksheet-form__label">Email</label>
-                <input id="email" class="worksheet-form__input" value="RandomEmail@gmail.com">
-            </div>
-            <div class="worksheet-form__line">
-                <label for="phone" class="worksheet-form__label">Моб.Телефон</label>
-                <input id="phone" class="worksheet-form__input" value="(093) 093-0520">
-            </div>
-            <div class="worksheet-form__line soc-media">
-                <label for="skype" class="worksheet-form__label soc-media__item soc-media__item-skype">Skype</label>
-                <input id="skype" class="worksheet-form__input" value="">
-            </div>
-            <div class="worksheet-form__line soc-media">
-                <label for="telegram" class="worksheet-form__label soc-media__item soc-media__item-telegram">Telegram</label>
-                <input id="telegram" class="worksheet-form__input" value="">
-            </div>
-            <div class="worksheet-form__line soc-media">
-                <label for="linkedin" class="worksheet-form__label soc-media__item soc-media__item-linkedin">Linkedin</label>
-                <input id="linkedin" class="worksheet-form__input" value="">
-            </div>
-            <div class="worksheet-form__line soc-media">
-                <label for="github" class="worksheet-form__label soc-media__item soc-media__item-github">Github</label>
-                <input id="github" class="worksheet-form__input" value="">
-            </div>
-            <div class="worksheet-form__line last-line">
-                <label for="resume" class="worksheet-form__label-wrap">
-                    <div class="worksheet-form__input-label">Резюме</div>
-                    <div class="worksheet-form__input-wrapper">
-                        <div class="worksheet-form__input worksheet-form__input-wrap">
-                            <input id="resume" type="file" class="worksheet-form__input-file">
-                        </div>
+        <div class="worksheet-form__line not-centered">
+            <label form="worksheet-form" for="experience" class="worksheet-form__label">Досвід роботи</label>
+            <textarea form="worksheet-form" id="experience" class="worksheet-form__area">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Velit officia consequat duis enim velit mollit. Amet minim mollit non deserunt ullamco est sit aliqua.</textarea>
+        </div>
+        <div class="worksheet-form__line">
+            <label form="worksheet-form" for="experience-years" class="worksheet-form__label">Рокiв досвiду</label>
+            <input form="worksheet-form" id="experience-years" class="worksheet-form__input mini-input" value="1 рiк">
+        </div>
+        <div class="worksheet-form__line not-centered expectations">
+            <label form="worksheet-form" for="expectations" class="worksheet-form__label">Очiкування вiд роботи</label>
+            <textarea form="worksheet-form" id="expectations" class="worksheet-form__area mini-area">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</textarea>
+        </div>
+        <div class="worksheet-form__line not-centered english-level">
+            <label for="english-level" class="worksheet-form__label">Рівень англійської</label>
+            <ul class="filter__skills" id="english-level">
+                <li class="filter__skill">
+                    <input form="worksheet-form" name="skills" type="radio" class="radio__input" id="skill1" value="None">
+                    <label form="worksheet-form" for="skill1" class="filter__skill-checkbox radio__label">
+                        <span>None</span>
+                    </label>
+                </li>
+                <li class="filter__skill">
+                    <input form="worksheet-form" name="skills" type="radio" class="radio__input" id="skill2" value="Beginer">
+                    <label form="worksheet-form" for="skill2" class="filter__skill-checkbox radio__label">
+                        <span>Beginer</span>
+                    </label>
+                </li>
+                <li class="filter__skill">
+                    <input form="worksheet-form" name="skills" type="radio" class="radio__input" id="skill3" value="Pre-intermediate">
+                    <label form="worksheet-form" for="skill3" class="filter__skill-checkbox radio__label">
+                        <span>Pre-intermediate</span>
+                    </label>
+                </li>
+                <li class="filter__skill">
+                    <input name="skills" type="radio" class="radio__input" id="skill4" value="Intermediate">
+                    <label for="skill4" class="filter__skill-checkbox radio__label">
+                        <span>Intermediate</span>
+                    </label>
+                </li>
+                <li class="filter__skill">
+                    <input form="worksheet-form" name="skills" type="radio" class="radio__input" id="skill5" value="Upper-intermediate">
+                    <label form="worksheet-form" for="skill5" class="filter__skill-checkbox radio__label">
+                        <span>Upper-intermediate</span>
+                    </label>
+                </li>
+                <li class="filter__skill">
+                    <input form="worksheet-form" name="skills" type="radio" class="radio__input" id="skill6" value="Advanced/Fluent">
+                    <label form="worksheet-form" for="skill6" class="filter__skill-checkbox radio__label">
+                        <span>Advanced/Fluent</span>
+                    </label>
+                </li>
+            </ul>
+        </div>
+        <div class="worksheet-form__line employment">
+            <label form="worksheet-form" for="employment" class="worksheet-form__label">Рівень англійської</label>
+            <ul class="filter__employment-items" id="employment">
+                <li class="filter__employment-item">
+                    <input form="worksheet-form" name="employment" type="radio" id="employment3" value="Freelance" class="button__radio">
+                    <label form="worksheet-form" for="employment3" class="filter__skill-checkbox button__label">
+                        <span>Freelance</span>
+                    </label>
+                </li>
+                <li class="filter__employment-item">
+                    <input form="worksheet-form" name="employment" type="radio" id="employment1" value="Full-time" class="button__radio" checked>
+                    <label form="worksheet-form" for="employment1" class="filter__skill-checkbox button__label">
+                        <span>Full-time</span>
+                    </label>
+                </li>
+                <li class="filter__employment-item">
+                    <input form="worksheet-form" name="employment" type="radio" id="employment2" value="Part-time" class="button__radio">
+                    <label form="worksheet-form" for="employment2" class="filter__skill-checkbox button__label">
+                        <span>Part-time</span>
+                    </label>
+                </li>
+            </ul>
+        </div>
+        <div class="worksheet-form__line not-centered employment-type">
+            <label form="worksheet-form" for="employment-type" class="worksheet-form__label">Вид зайнятості</label>
+            <ul class="filter__relocation" id="employment-type">
+                <li class="filter__relocation-item">
+                    <input form="worksheet-form" id="relocation1" class="thumbler__toggle thumbler__toggle-round" type="checkbox" checked>
+                    <label form="worksheet-form" for="relocation1"class="thumbler__label"><span class="thumbler__title">Remote</span></label>
+                </li>
+                <li class="filter__relocation-item">
+                    <input form="worksheet-form" id="relocation2" class="thumbler__toggle thumbler__toggle-round" type="checkbox">
+                    <label form="worksheet-form" for="relocation2"class="thumbler__label"><span class="thumbler__title">Relocate</span></label>
+                </li>
+                <li class="filter__relocation-item">
+                    <input form="worksheet-form" id="relocation3" class="thumbler__toggle thumbler__toggle-round" type="checkbox" checked>
+                    <label form="worksheet-form" for="relocation3"class="thumbler__label"><span class="thumbler__title">Other city</span></label>
+                </li>
+            </ul>
+        </div>
+    </li>
+    <li id="content2" class="worksheet-form__content worksheet-form__content_thin">
+        <div class="worksheet-form__line">
+            <label form="worksheet-form" for="name" class="worksheet-form__label">Ім'я та прізвище</label>
+            <input form="worksheet-form" id="name" class="worksheet-form__input" value="Дмитро Пенчук">
+        </div>
+        <div class="worksheet-form__line">
+            <label form="worksheet-form" for="email" class="worksheet-form__label">Email</label>
+            <input form="worksheet-form" id="email" class="worksheet-form__input" value="RandomEmail@gmail.com">
+        </div>
+        <div class="worksheet-form__line">
+            <label form="worksheet-form" for="phone" class="worksheet-form__label">Моб.Телефон</label>
+            <input form="worksheet-form" id="phone" class="worksheet-form__input" value="(093) 093-0520">
+        </div>
+        <div class="worksheet-form__line soc-media">
+            <label form="worksheet-form" for="skype" class="worksheet-form__label soc-media__item soc-media__item-skype">Skype</label>
+            <input form="worksheet-form" id="skype" class="worksheet-form__input" value="">
+        </div>
+        <div class="worksheet-form__line soc-media">
+            <label form="worksheet-form" for="telegram" class="worksheet-form__label soc-media__item soc-media__item-telegram">Telegram</label>
+            <input form="worksheet-form" id="telegram" class="worksheet-form__input" value="">
+        </div>
+        <div class="worksheet-form__line soc-media">
+            <label form="worksheet-form" for="linkedin" class="worksheet-form__label soc-media__item soc-media__item-linkedin">Linkedin</label>
+            <input form="worksheet-form" id="linkedin" class="worksheet-form__input" value="">
+        </div>
+        <div class="worksheet-form__line soc-media">
+            <label form="worksheet-form" for="github" class="worksheet-form__label soc-media__item soc-media__item-github">Github</label>
+            <input form="worksheet-form" id="github" class="worksheet-form__input" value="">
+        </div>
+        <div class="worksheet-form__line last-line">
+            <label form="worksheet-form" for="resume" class="worksheet-form__label-wrap">
+                <div class="worksheet-form__input-label">Резюме</div>
+                <div class="worksheet-form__input-wrapper">
+                    <div class="worksheet-form__input worksheet-form__input-wrap">
+                        <input form="worksheet-form" id="resume" type="file" class="worksheet-form__input-file">
                     </div>
-                </label>
-                <div class="worksheet-form__files">Виберiть файл з CV</div>
-            </div>
+                </div>
+            </label>
+            <div class="worksheet-form__files">Виберiть файл з CV</div>
         </div>
-        <div id="content3" class="worksheet-form__content">
-        </div>
-        <div class="worksheet-form__buttons">
-            <a href="#" class="the-button worksheet-form__public-link">Дивитися публічний профіль</a>
-            <button type="submit" class="the-button worksheet-form__button">Оновити профiль</button>
-        </div>
-    </div>
-
-</form>
+    </li>
+    <li id="content3" class="worksheet-form__content">
+        {{> my-interview }}
+    </li>
+</ul>
+<div class="worksheet-form__buttons">
+    <a href="#" class="the-button worksheet-form__public-link">Дивитися публічний профіль</a>
+    <button form="worksheet-form" type="submit" class="the-button worksheet-form__button">Оновити профiль</button>
+</div>

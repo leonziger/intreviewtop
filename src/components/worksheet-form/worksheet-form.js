@@ -27,19 +27,26 @@ function handleFiles(files) {
   });
 }
 
-const tabs = $('.worksheet-form__tabs');
+const tab = $('.worksheet-form__tab');
+const content = $('.worksheet-form__content');
 
-if (tabs.length > 0) {
-  tabs.click(function(e){
-    const target = e.target || window.event.srcElement;
-    console.log(target);
-    const tabInterview  = $(e.target).siblings('.tab-interview');
-    const parentContainer = $(e.target).parents('.candidates-profile__worksheet-container');
+tab.each(function() {
+  tab.click(function() {
+    const index = $(this).index();
+    const parentTabs = tab.eq(index).parents('.worksheet-form__tabs');
+    const parentContainer = tab.eq(index).parents('.candidates-profile__worksheet-container');
+    tab.eq(index).addClass('active-tab').siblings().removeClass('active-tab');
+    content.eq(index).addClass('active-content').siblings().removeClass('active-content');
 
-    if (tabInterview.length > 0) {
-      parentContainer.removeClass('fraimed-container');
-    }  else {
-      parentContainer.addClass('fraimed-container');
+    if (index === 2) {
+      if ( parentContainer.hasClass('fraim') ) {
+        parentContainer.removeClass('fraim');
+        parentTabs.addClass('fraim')
+      }
+    } else {
+      parentContainer.addClass('fraim');
+      parentTabs.removeClass('fraim')
     }
+
   });
-}
+});

@@ -2,41 +2,79 @@
 
   &__tabs {
     text-align: center;
+    padding: 46px 0 22px;
+    margin-bottom: 17px;
+
+    @media(max-width: 1099px) {
+      padding: 36px 0 22px;
+    }
+
+    @media(max-width: 767px) {
+      padding: 30px 0 22px;
+    }
+
+    @media(max-width: 575px) {
+      padding: 22px 0 10px;
+    }
   }
 
   &__tab {
-
-    &-name {
       display: inline-block;
-      margin: 0 15px 43px;
+      //margin: 0 15px 43px;
+      margin: 0 15px 5px;
       cursor: pointer;
       font-weight: 600;
       font-size: 16px;
       line-height: 1.4;
       letter-spacing: 0.05em;
       color: $lightgray;
-      padding-bottom: 7px;
+      padding-bottom: 6px;
       border-bottom: 1px solid transparent;
 
       @media(max-width: 767px) {
-        margin: 0 15px 30px;
         font-size: 14px;
         line-height: 1.2;
       }
+
+      @media(max-width: 575px) {
+        margin: 0 5px 10px;
+        font-size: 14px;
+        line-height: 1.2;
+      }
+
+      @media(max-width: 399px) {
+        letter-spacing: 0.01em;
+      }
+
+    &.active-tab {
+      color: $blue;
+      border-bottom: 1px solid $blue;
     }
 
-    &-input {
-      display: none;
-
-      &:checked + .worksheet-form__tab-name {
-        color: $blue;
-        border-bottom: 1px solid $blue;
-      }
+    &:hover {
+      color: $blue;
+      border-bottom: 1px solid $blue;
     }
   }
 
   &__content {
     display: none;
+
+    @media(max-width: 991px) {
+      padding: 0 15px;
+    }
+
+    &_thin {
+      padding: 0 75px;
+
+      @media(max-width: 991px) {
+        padding: 0 15px;
+      }
+    }
+
+    &.active-content {
+      display: block;
+    }
   }
 
   &__select {
@@ -332,14 +370,15 @@
       margin: 50px auto 0;
     }
 
-    @media(max-width: 575px) {
-      max-width: 100%;
+    @media(max-width: 479px) {
+      max-width: 260px;
     }
   }
 
   &__button,
   &__public-link {
     width: 100%;
+    text-align: center;
   }
 
   &__button {
@@ -370,12 +409,6 @@
       color: white;
     }
   }
-}
-
-#tab1:checked ~ #content1,
-#tab2:checked ~ #content2,
-#tab3:checked ~ #content3 {
-  display: block;
 }
 
 .filter__skills#english-level {

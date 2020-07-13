@@ -1,0 +1,75 @@
+.my-interview {
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @media(max-width: 991px) {
+      justify-content: space-around;
+    }
+  }
+
+  &__item {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+    color: $black;
+    padding: 26px 20px 21px 24px;
+    position: relative;
+    text-align: left;
+    margin-bottom: 16px;
+    max-width: 242px;
+    width: 25%;
+
+    @media(max-width: 991px) {
+      width: 100%;
+    }
+
+    @media(max-width: 767px) {
+      font-size: 14px;
+    }
+  }
+
+  &__date {
+    margin-bottom: 27px;
+
+    @media(max-width: 767px) {
+      margin-bottom: 17px;
+    }
+  }
+
+  &__activation {
+    position: absolute;
+    right: 19px;
+    top: 26px;
+  }
+
+  &__developer {
+    margin-bottom: 13px;
+
+    &-position {
+      font-weight: 600;
+    }
+  }
+
+  &__detail {
+    line-height: 2;
+    letter-spacing: 0.03em;
+
+    @media(max-width: 767px) {
+      line-height: 1.5;
+    }
+
+    &-name {
+      display: inline-block;
+      padding-right: 3px;
+    }
+
+    &-value {
+      display: inline-block;
+      font-weight: 600;
+    }
+  }
+}
