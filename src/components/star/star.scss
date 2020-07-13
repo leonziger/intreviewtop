@@ -68,6 +68,12 @@
     }
   }
 
+  &.gray {
+    &:before {
+      background-image: url(../images/star-gray.svg);
+    }
+  }
+
   &_rated {
 
     &:before {
@@ -95,6 +101,12 @@
     &:hover {
       .star__inform {
         display: block;
+      }
+    }
+
+    &.gray {
+      &:before {
+        background-image: url(../images/star-gray_filled.svg);
       }
     }
   }

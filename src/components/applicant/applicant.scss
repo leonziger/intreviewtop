@@ -135,6 +135,14 @@
     display: flex;
     justify-content: center;
     margin-bottom: 18px;
+
+    @media(max-width: 1099px) {
+      margin-bottom: 0;
+    }
+
+    @media(max-width: 767px) {
+      margin-bottom: 18px;
+    }
   }
 
   &__name-surname {
@@ -450,5 +458,58 @@
   @media(max-width: 639px) {
     width: 100%;
     height: auto;
+  }
+}
+
+.sendmessage {
+  &__form {
+    width: 100%;
+    margin-top: 48px;
+
+    @media(max-width: 1099px) {
+      margin-top: 0;
+      display: flex;
+    }
+
+    @media(max-width: 767px) {
+      display: block;
+    }
+  }
+
+  &__area {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.05em;
+    height: 102px;
+    width: 100%;
+    border: 1px solid $gray;
+    border-radius: 2px 0 0 2px;
+    padding: 8px;
+    margin-bottom: 11px;
+
+    &::placeholder {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 1.25;
+      letter-spacing: 0.05em;
+      color: $gray;
+      text-align: center;
+    }
+
+    @media(max-width: 1099px) {
+      max-width: 700px;
+      margin: 0 20px;
+    }
+
+    @media(max-width: 767px) {
+      margin: 0 0 11px;
+    }
+  }
+
+  &__button {
+    padding: 14px 61px;
+    margin: 0 auto;
+    align-self: center;
   }
 }
