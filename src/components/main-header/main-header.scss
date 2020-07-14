@@ -36,6 +36,11 @@
 
   &__nav {
     margin-top: -1px;
+    margin-left: 86px;
+
+    @media(max-width: 1199px) {
+      margin-left: 0;
+    }
   }
 
   &__user {
@@ -244,5 +249,14 @@
   .notice {
     width: 24px;
     height: 24px;
+  }
+}
+
+.main-header__langs {
+  margin-left: 86px;
+  margin-top: -1px;
+
+  @media(max-width: 1199px) {
+    margin-left: 0;
   }
 }
