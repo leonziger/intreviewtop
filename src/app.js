@@ -17,3 +17,4 @@ import './components/candidates-settings/candidates-settings';
 import './components/vacancy/vacancy';
 import './components/subscribes/subscribes';
 import './components/my-interview/my-interview';
+import './components/message-form/message-form';

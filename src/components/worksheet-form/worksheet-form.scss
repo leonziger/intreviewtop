@@ -222,10 +222,12 @@
 
     &-wrapper {
       position: relative;
+      margin-left: -25px;
 
       @media(max-width: 819px) {
         width: 100%;
         max-width: 100%;
+        margin-left: 0;
       }
 
       &:before {
@@ -310,17 +312,26 @@
       overflow: hidden;
       white-space: nowrap;
       text-overflow: ellipsis;
+      display: flex;
+      align-items: center;
+
+      &:after {
+        content: '';
+        width: 16px;
+        height: 16px;
+        margin: 0 0 0 10px;
+        display: block;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url(../images/delete.svg);
+      }
 
       &:hover {
         color: $red;
         cursor: pointer;
 
         &:after {
-          content: 'X';
-          display: inline-block;
-          margin-left: 10px;
-          color: $red;
-          text-align: center;
+          background-image: url(../images/delete_red.svg);
         }
       }
     }
@@ -461,6 +472,33 @@
       margin-right: 12px;
     }
 
+    &-person {
+      &:before {
+        width: 20px;
+        height: 20px;
+        background-image: url(../images/worksheet-person.svg);
+        margin-right: 8px;
+      }
+    }
+
+    &-email {
+      &:before {
+        width: 20px;
+        height: 20px;
+        background-image: url(../images/worksheet-email.svg);
+        margin-right: 7px;
+      }
+    }
+
+    &-phone {
+      &:before {
+        width: 20px;
+        height: 20px;
+        background-image: url(../images/worksheet-phone.svg);
+        margin-right: 7px;
+      }
+    }
+
     &-skype {
       padding-top: 2px;
       &:before {
@@ -493,6 +531,15 @@
         height: 17px;
         background-image: url(../images/worksheet-github.svg);
         margin-right: 10px;
+      }
+    }
+
+    &-resume {
+      &:before {
+        width: 20px;
+        height: 20px;
+        background-image: url(../images/worksheet-resume.svg);
+        margin-right: 8px;
       }
     }
   }
