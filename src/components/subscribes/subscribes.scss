@@ -1,5 +1,66 @@
 .subscribes {
 
+  &__add {
+    margin-top: -3px;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.4;
+    letter-spacing: 0.04em;
+    color: $blue;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    &:before {
+      content: 'Додати';
+      display: block;
+      transition: $delay;
+      white-space: nowrap;
+
+      @media(max-width: 767px) {
+        font-size: 14px;
+        line-height: 1.2;
+      }
+    }
+
+    &:after {
+      content: '';
+      display: block;
+      width: 15px;
+      height: 15px;
+      background-image: url('../images/subscribe.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      transition: $delay;
+      margin-left: 7px;
+    }
+
+    &_disable {
+      display: none;
+    }
+
+    &.subscribed {
+
+      &:before {
+        content: 'Видалити';
+      }
+
+      &:after {
+        transform: rotate(45deg);
+      }
+    }
+
+    &.gray-block {
+      color: $gray;
+
+      &:after {
+        background-image: url(../images/subscribe_gray.svg);
+      }
+    }
+
+  }
+
   &__columns {
 
     @media(max-width: 1099px) {
@@ -11,8 +72,21 @@
     }
   }
 
+  &__lines {
+    margin-bottom: 83px;
+  }
+
+  &__line {
+    padding: 34px 33px 8px 33px;
+    margin-bottom: 16px;
+
+    @media(max-width: 767px) {
+      padding: 34px 33px;
+    }
+  }
+
   &__container {
-    padding: 33px 31px 8px 33px;
+    padding: 33px 31px 31px 33px;
     margin-bottom: 24px;
 
     @media(max-width: 767px) {
@@ -23,6 +97,66 @@
   &-form {
     margin-top: 41px;
     transition: $delay;
+
+    &__container {
+      display: flex;
+      justify-content: space-between;
+
+      @media(max-width: 767px) {
+        flex-direction: column;
+      }
+
+      &-block {
+        max-width: 49%;
+        width: 100%;
+
+        @media(max-width: 991px) {
+          max-width: 48%;
+        }
+
+        @media(max-width: 767px) {
+          align-items: center;
+          max-width: 100%;
+        }
+
+        &_right {
+          .worksheet-form__line {
+            justify-content: flex-end;
+          }
+
+          @media(max-width: 767px) {
+            .worksheet-form__line {
+              justify-content: flex-start;
+            }
+          }
+        }
+      }
+    }
+
+    &__inside {
+
+      @media(max-width: 991px) {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      @media(max-width: 767px) {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      &-block {
+
+        @media(max-width: 991px) {
+          max-width: 48%;
+          width: 100%;
+        }
+
+        @media(max-width: 767px) {
+          max-width: 100%;
+        }
+      }
+    }
   }
 
   &__activation {
@@ -67,6 +201,10 @@
   &__input {
     max-width: 296px;
     width: 100%;
+
+    @media(max-width: 819px) {
+      max-width: 500px;
+    }
   }
 
 }
