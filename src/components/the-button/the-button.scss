@@ -12,12 +12,45 @@
   border: 0;
   cursor: pointer;
   text-decoration: none;
-  transition: $delay;
   background: $blue;
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.04), 0 2px 6px rgba(91, 92, 238, 0.06), 0 15px 30px rgba(91, 92, 238, 0.15);
   border-radius: 2px;
+  white-space: nowrap;
+  transition: $delay;
 
   &:hover {
     background: darken($blue,10%);
+  }
+}
+
+.empty-button {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 13px 17px;
+  background: transparent;
+  border: 1px solid $blue;
+  border-radius: 2px;
+  box-shadow: none;
+  outline: none;
+  color: $blue;
+  white-space: nowrap;
+  transition: $delay;
+
+  svg {
+    stroke: $blue;
+  }
+
+  &:hover {
+    color: #fff;
+    background: $blue;
+
+    svg {
+      stroke: #fff;
+    }
   }
 }

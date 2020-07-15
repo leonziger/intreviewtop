@@ -9,15 +9,9 @@
 
     &__recruiter-link {
       position: absolute;
-      display: block;
       top: -10px;
       right: 0;
       text-decoration: none;
-      box-shadow: none;
-      border: 1px solid $blue;
-      color: $blue;
-      border-radius: 2px;
-      background-color: transparent;
       padding: 13px 36px;
 
       @media(max-width: 991px) {

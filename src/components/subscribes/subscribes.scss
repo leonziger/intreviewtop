@@ -74,6 +74,10 @@
 
   &__lines {
     margin-bottom: 83px;
+
+    @media(max-width: 991px) {
+      margin-bottom: 40px;
+    }
   }
 
   &__line {

@@ -245,6 +245,10 @@
       }
     }
   }
+
+  &__button {
+    margin: 50px auto 0;
+  }
 }
 
 .scheduled-interview {
@@ -321,7 +325,6 @@
 
   }
 
-
   &__comment {
     font-weight: normal;
     font-size: 12px;
@@ -344,19 +347,18 @@
     color: $blue;
     box-shadow: none;
 
+    @media(max-width: 767px) {
+      margin-bottom: 20px;
+      font-size: 14px;
+      line-height: 1.2;
+    }
+
     &:hover {
-      color: #fff;
 
       svg {
         stroke: #fff;
         fill: #fff;
       }
-    }
-
-    @media(max-width: 767px) {
-      margin-bottom: 20px;
-      font-size: 14px;
-      line-height: 1.2;
     }
   }
 
@@ -396,4 +398,11 @@
   width: 61px;
   height: 14px;
   fill: $blue;
+}
+
+.plus-icon {
+  fill-opacity: 0;
+  width: 13px;
+  height: 13px;
+  margin-left: 10px;
 }

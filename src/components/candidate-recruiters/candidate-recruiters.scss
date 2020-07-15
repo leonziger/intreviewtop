@@ -32,11 +32,13 @@
   }
 
   &__buttons {
-    padding: 20px 16px 4px;
+    padding: 20px 16px;
 
     @media(max-width: 1099px) {
       display: flex;
       justify-content: space-between;
+      flex-wrap: wrap;
+      padding: 20px 16px 4px;
     }
 
     @media(max-width: 575px) {
@@ -47,34 +49,29 @@
   }
 
   &__button {
-    background-color: transparent;
-    box-shadow: none;
-    border-radius: 2px;
-    border: 1px solid $blue;
-    color: $blue;
     height: 50px;
     width: 100%;
-    white-space: nowrap;
     margin-bottom: 16px;
 
     @media(max-width: 1099px) {
-      width: 33%;
+      width: 24%;
       max-width: 100%;
+    }
+
+    @media(max-width: 991px) {
+      width: 49%;
+      max-width: 50%;
     }
 
     @media(max-width: 767px) {
       font-size: 14px;
       line-height: 1.2;
-      height: 35px;
+      height: 40px;
     }
 
     @media(max-width: 575px) {
       width: 100%;
-    }
-
-    &:hover {
-      color: #fff;
-      background-color: $blue;
+      max-width: 100%;
     }
   }
 
@@ -202,7 +199,17 @@
   color: $red;
 
   &:hover {
-    color: #fff;
-    background-color: $red;
+    background: $red;
+  }
+}
+
+
+.button-interview {
+  padding: 14px 13px;
+  color: #fff;
+  background: $blue;
+
+  &:hover {
+    background: darken($blue,10%);
   }
 }
