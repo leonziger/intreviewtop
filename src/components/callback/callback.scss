@@ -35,6 +35,13 @@
           flex-direction: column;
           align-items: center;
         }
+
+        &.first-group {
+          @media(max-width: 374px) {
+            max-width: 175px;
+            align-items: flex-start;
+          }
+        }
       }
     }
 
@@ -167,6 +174,7 @@
 
         @media(max-width: 374px) {
           flex-direction: column;
+          align-items: flex-start;
 
           .callback-form__data-name {
             margin-bottom: 10px;
