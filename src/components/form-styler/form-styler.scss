@@ -69,10 +69,7 @@
     &-text {
       color: #fff;
       font: 400 16px/1.4 'Inter', sans-serif;
-
-      @media(max-width: 767px) {
-        overflow: auto;
-      }
+      overflow: initial;
     }
   }
 

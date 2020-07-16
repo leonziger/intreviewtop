@@ -39,13 +39,13 @@ tab.each(function() {
     content.eq(index).addClass('active-content').siblings().removeClass('active-content');
 
     if (index === 2) {
-      if ( parentContainer.hasClass('fraim') ) {
-        parentContainer.removeClass('fraim');
-        parentTabs.addClass('fraim')
+      if ( parentContainer.hasClass('frame') ) {
+        parentContainer.removeClass('frame');
+        parentTabs.addClass('frame')
       }
     } else {
-      parentContainer.addClass('fraim');
-      parentTabs.removeClass('fraim')
+      parentContainer.addClass('frame');
+      parentTabs.removeClass('frame')
     }
 
   });

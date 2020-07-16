@@ -93,6 +93,7 @@
   }
 
   &__social {
+
     &-notice {
       color: #000;
       text-align: center;
@@ -116,19 +117,7 @@
     }
 
     &-link {
-      text-decoration: none;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 16px;
-      line-height: 1.4;
-      letter-spacing: 0.05em;
-      color: $blue;
-      background: #fff;
-      border: 1px solid $blue;
-      border-radius: 2px;
       padding: 13px 48px;
-      transition: $delay;
 
       @media(max-width: 479px) {
         padding: 10px 30px;
@@ -137,8 +126,6 @@
       }
       
       &:hover {
-        background: $blue;
-        color: #fff;
 
         svg {
           fill: #fff;
@@ -164,11 +151,5 @@
   &__submit {
     margin: 0 auto 24px;
     width: 100%;
-  }
-
-  .social-link {
-    width: 15px;
-    height: 15px;
-    fill: $blue;
   }
 }

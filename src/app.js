@@ -10,7 +10,7 @@ import './components/filters/filters';
 import './components/reg-form/reg-form';
 import './components/search-form/search-form';
 import './components/salary-filter/salary-filter';
-import './components/dropdown/dropdown';
+import './components/dropdown-toggle/dropdown-toggle';
 import './components/star/star';
 import './components/worksheet-form/worksheet-form';
 import './components/candidates-settings/candidates-settings';

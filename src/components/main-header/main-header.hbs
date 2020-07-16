@@ -3,7 +3,10 @@
         <div class="main-header__menu-toggle">
             {{> menu-toggle }}
         </div>
-        <a href="./index.html" class="main-header__logo">InterviewTop</a>
+        <a href="./index.html" class="main-header__logo">
+            <!--InterviewTop-->
+            <img src="./images/logo.svg" alt="" class="main-header__logo-icon">
+        </a>
         <div class="main-header__nav main-menu">
             {{> nav }}
         </div>
@@ -19,29 +22,29 @@
                 Увiйти
             </a>
             <div class="main-header__user-notices">
-                <div class="dropdown">
-                    <div class="dropdown__icon">
+                <div class="dropdown-toggle">
+                    <div class="dropdown-toggle__icon">
                         <img src="./images/bell_active.png">
                     </div>
-                    <div class="fraimed-container dropdown__container">
-                        <div class="base__subtitle dropdown__title">Новi повiдомлення</div>
-                        <ul class="dropdown__messages">
-                            <li class="dropdown__message">
-                                <div class="dropdown__message-image">
-                                    <img src="./images/message1.png" alt="" class="dropdown__message-icon">
+                    <div class="fraimed-container dropdown-toggle__container">
+                        <div class="base__subtitle dropdown-toggle__title">Новi повiдомлення</div>
+                        <ul class="dropdown-toggle__messages">
+                            <li class="dropdown-toggle__message">
+                                <div class="dropdown-toggle__message-image">
+                                    <img src="./images/message1.png" alt="" class="dropdown-toggle__message-icon">
                                 </div>
-                                <div class="dropdown__message-text">
-                                    <a href="#" class="dropdown__message-name">Кучеренко Андрiй</a>
-                                    <div class="dropdown__message-description">Вiдкрив вам свої контакти</div>
+                                <div class="dropdown-toggle__message-text">
+                                    <a href="#" class="dropdown-toggle__message-name">Кучеренко Андрiй</a>
+                                    <div class="dropdown-toggle__message-description">Вiдкрив вам свої контакти</div>
                                 </div>
                             </li>
-                            <li class="dropdown__message">
-                                <div class="dropdown__message-image">
-                                    <img src="./images/message2.png" alt="" class="dropdown__message-icon">
+                            <li class="dropdown-toggle__message">
+                                <div class="dropdown-toggle__message-image">
+                                    <img src="./images/message2.png" alt="" class="dropdown-toggle__message-icon">
                                 </div>
-                                <div class="dropdown__message-text">
-                                    <a href="#" class="dropdown__message-name">Левченко Олена</a>
-                                    <div class="dropdown__message-description">Вiдкрив вам свої контакти</div>
+                                <div class="dropdown-toggle__message-text">
+                                    <a href="#" class="dropdown-toggle__message-name">Левченко Олена</a>
+                                    <div class="dropdown-toggle__message-description">Вiдкрив вам свої контакти</div>
                                 </div>
                             </li>
                         </ul>
@@ -51,16 +54,16 @@
             <a href="./profile.html" class="main-header__user-icon">
                 <div class="main-header__user-inner"></div>
             </a>
-            <div class="dropdown main-header__user-menu">
-                <div class="dropdown__icon">
+            <div class="dropdown-toggle main-header__user-menu">
+                <div class="dropdown-toggle__icon">
                     <span></span>
                 </div>
-                <div class="fraimed-container dropdown__container">
-                    <ul class="dropdown__list">
-                        <li class="dropdown__item"><a href="#" class="dropdown__link">
+                <div class="fraimed-container dropdown-toggle__container">
+                    <ul class="dropdown-toggle__list">
+                        <li class="dropdown-toggle__item"><a href="#" class="dropdown-toggle__link">
                             Налаштування</a>
                         </li>
-                        <li class="dropdown__item"><a href="#" class="dropdown__link dropdown__link_alert">
+                        <li class="dropdown-toggle__item"><a href="#" class="dropdown-toggle__link dropdown-toggle__link_alert">
                             Вийти
                         </a></li>
                     </ul>
@@ -69,5 +72,3 @@
         </div>
     </div>
 </header>
-
-

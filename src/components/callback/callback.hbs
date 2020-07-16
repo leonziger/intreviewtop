@@ -1,0 +1,89 @@
+<template data-modal="callback">
+    <div class="modal" id="modal-callback">
+        <div class="frame modal__content callback">
+            <form class="callback-form">
+                <div class="callback-form__info">
+                    <div class="callback-form__info-left">
+                        <ul class="callback-form__candidates">
+                            <li class="callback-form__candidate">
+                                <input name="candidate" class="radio__input" type="radio" id="cand1" value="cand1" checked="">
+                                <label for="cand1" class="radio__label  radio__label_candidate recruitment-form__candidate-wrap">
+                                    <div class="callback-form__candidate-image">
+                                        <img src="./images/cand1.png" alt="">
+                                    </div>
+                                </label>
+                                <div class="callback-form__candidate-text">
+                                    <a href="#" class="callback-form__candidate-name">Дмитро Пенчук</a>
+                                    <div class="callback-form__candidate-position">HR in Interview.top</div>
+                                </div>
+                            </li>
+                            <li class="callback-form__candidate">
+                                <input name="candidate" class="radio__input" type="radio" id="cand2" value="cand2" >
+                                <label for="cand2" class="radio__label  radio__label_candidate recruitment-form__candidate-wrap">
+                                    <div class="callback-form__candidate-image">
+                                        <img src="./images/cand2.png" alt="">
+                                    </div>
+                                </label>
+                                <div class="callback-form__candidate-text">
+                                    <a href="#" class="callback-form__candidate-name">Дмитро Пенчук</a>
+                                    <div class="callback-form__candidate-position">HR in Interview.top</div>
+                                </div>
+                            </li>
+                            <li class="callback-form__candidate">
+                                <input name="candidate" class="radio__input" type="radio" id="cand3" value="cand3" >
+                                <label for="cand3" class="radio__label  radio__label_candidate recruitment-form__candidate-wrap">
+                                    <div class="callback-form__candidate-image">
+                                        <img src="./images/cand1.png" alt="">
+                                    </div>
+                                </label>
+                                <div class="callback-form__candidate-text">
+                                    <a href="#" class="callback-form__candidate-name">Дмитро Пенчук</a>
+                                    <div class="callback-form__candidate-position">HR in Interview.top</div>
+                                </div>
+                            </li>
+                            <li class="callback-form__candidate">
+                                <input name="candidate" class="radio__input" type="radio" id="cand4" value="cand4" >
+                                <label for="cand4" class="radio__label  radio__label_candidate recruitment-form__candidate-wrap">
+                                    <div class="callback-form__candidate-image">
+                                        <img src="./images/cand2.png" alt="">
+                                    </div>
+                                </label>
+                                <div class="callback-form__candidate-text">
+                                    <a href="#" class="callback-form__candidate-name">Дмитро Пенчук</a>
+                                    <div class="callback-form__candidate-position">HR in Interview.top</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="callback-form__info-right"></div>
+                </div>
+                <div class="callback-form__control">
+                    <div class="callback-form__control-group">
+                        <div class="callback-form__data date">
+                            <div class="callback-form__data-name">Дата</div>
+                            <input type="text" name="date" class="callback-form__data-value" value="21.01.2020">
+                        </div>
+                        <div class="callback-form__data time">
+                            <div class="callback-form__data-name">Час початку</div>
+                            <input type="text" name="time" class="callback-form__data-value" value="10:50">
+                        </div>
+                    </div>
+                    <div class="callback-form__control-group">
+                        <div class="callback-form__data communicator">
+                            <div class="callback-form__data-name">Метод коммунiкацiї</div>
+                            <select name="communicator" id="" class="callback-form__data-select">
+                                <option value="1">Zoom</option>
+                                <option value="2">Skype</option>
+                                <option value="3">iнше</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="the-button callback-form__button">
+                            Запланувати
+                            {{> icon iconName="subscribe_white" classNames="plus-icon" }}
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</template>

@@ -4,7 +4,7 @@
         <section class="dashboard">
             <div class="dashboard__section selected-candidates">
                 <div class="h2 dashboard__section-title">Обрані кандидати</div>
-                <div class="fraimed-container dashboard__container">
+                <div class="frame dashboard__container">
                     <div class="candidate">
                         <div class="candidate__first-line">
                             <a href="#" class="base__title candidate__name">Дмитро Пенчук</a>
@@ -47,7 +47,7 @@
             </div>
             <div class="dashboard__section sent-offers">
                 <div class="h2 dashboard__section-title">Надіслані пропозиції</div>
-                <div class="fraimed-container dashboard__container">
+                <div class="frame dashboard__container">
                     <div class="offer">
                         <div class="offer__intro">
                             <a href="#" class="base__subtitle offer__title">UI/UX Designer</a>
@@ -56,7 +56,7 @@
                         <div class="offer__description">Текст</div>
                         <div class="offer__contact offer__contact_opened">Контакт відкрито</div>
                         <div class="offer__menu">
-                            {{> dropdown }}
+                            {{> dropdown-toggle }}
                         </div>
                     </div>
                     <div class="offer">
@@ -67,7 +67,7 @@
                         <div class="offer__description">Текст</div>
                         <div class="offer__contact">Чекає на відповідь</div>
                         <div class="offer__menu">
-                            {{> dropdown }}
+                            {{> dropdown-toggle }}
                         </div>
                     </div>
                     <div class="offer">
@@ -78,7 +78,7 @@
                         <div class="offer__description">Текст</div>
                         <div class="offer__contact">Чекає на відповідь</div>
                         <div class="offer__menu">
-                            {{> dropdown }}
+                            {{> dropdown-toggle }}
                         </div>
                     </div>
                 </div>
@@ -86,7 +86,7 @@
             <div class="dashboard__section added-vacancies">
                 <div class="h2 dashboard__section-title">Доданi вакансії</div>
                 <div class="vacancies__list">
-                    <div class="fraimed-container dashboard__container vacancy">
+                    <div class="frame dashboard__container vacancy">
                         <div class="candidate__first-line vacancy__line-first">
                             <div class="candidate__name-rating">
                                 <a href="#" class="base__title candidate__name">Senior Backend Developer</a>
@@ -144,7 +144,7 @@
                             <a href="#" class="vacancy__comments">5 відгуків</a>
                         </div>
                     </div>
-                    <div class="fraimed-container dashboard__container vacancy">
+                    <div class="frame dashboard__container vacancy">
                         <div class="candidate__first-line vacancy__line-first">
                             <div class="candidate__name-rating">
                                 <a href="#" class="base__title candidate__name">Senior Backend Developer</a>
@@ -207,7 +207,7 @@
             <div class="dashboard__section scheduled-interviews">
                 <div class="h2 dashboard__section-title">Заплановані iнтерв`ю</div>
                 <div class="scheduled-interviews__slides">
-                    <a href="recruter-search-candidate.html" class="fraimed-container visual interview scheduled-interview">
+                    <a href="recruter-search-candidate.html" class="frame visual interview scheduled-interview">
                         <div class="interview__inner">
                             <div class="interview__info">
                                 <div class="scheduled-interview__line-first">
@@ -228,7 +228,7 @@
                             </button>
                         </div>
                     </a>
-                    <a href="recruter-search-candidate.html" class="fraimed-container visual interview scheduled-interview">
+                    <a href="recruter-search-candidate.html" class="frame visual interview scheduled-interview">
                         <div class="interview__inner">
                             <div class="interview__info">
                                 <div class="scheduled-interview__line-first">
@@ -249,7 +249,7 @@
                             </button>
                         </div>
                     </a>
-                    <a href="recruter-search-candidate.html" class="fraimed-container visual interview scheduled-interview">
+                    <a href="recruter-search-candidate.html" class="frame visual interview scheduled-interview">
                         <div class="interview__inner">
                             <div class="interview__info">
                                 <div class="scheduled-interview__line-first">
@@ -270,7 +270,7 @@
                             </button>
                         </div>
                     </a>
-                    <a href="recruter-search-candidate.html" class="fraimed-container visual interview scheduled-interview">
+                    <a href="recruter-search-candidate.html" class="frame visual interview scheduled-interview">
                         <div class="interview__inner">
                             <div class="interview__info">
                                 <div class="scheduled-interview__line-first">
@@ -291,7 +291,7 @@
                             </button>
                         </div>
                     </a>
-                    <a href="recruter-search-candidate.html" class="fraimed-container visual interview scheduled-interview">
+                    <a href="recruter-search-candidate.html" class="frame visual interview scheduled-interview">
                         <div class="interview__inner">
                             <div class="interview__info">
                                 <div class="scheduled-interview__line-first">
@@ -312,7 +312,7 @@
                             </button>
                         </div>
                     </a>
-                    <a href="recruter-search-candidate.html" class="fraimed-container visual interview scheduled-interview">
+                    <a href="recruter-search-candidate.html" class="frame visual interview scheduled-interview">
                         <div class="interview__inner">
                             <div class="interview__info">
                                 <div class="scheduled-interview__line-first">
@@ -343,3 +343,4 @@
     </div>
 </div>
 {{> main-footer }}
+{{> callback }}
