@@ -32,10 +32,15 @@
       height: auto;
     }
 
-    @media(max-width: 374px) {
-      padding: 25px 20px;
-      min-width: 300px;
+    @media(max-width: 639px) {
+      padding: 25px 30px;
+      min-width: 340px;
     }
+
+    @media(max-width: 374px) {
+      min-width: 280px;
+    }
+
   }
 
   &__close {

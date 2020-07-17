@@ -3,19 +3,37 @@
     <div class="container">
         <section class="dashboard">
             <div class="dashboard__section selected-candidates">
-                <div class="h2 dashboard__section-title">Обрані кандидати</div>
+                <div class="dashboard__section-head">
+                    <div class="h2 dashboard__section-title">Обрані кандидати</div>
+                    <button class="empty-button dashboard__section-button">
+                        Дивитись кандидатів
+                        {{> icon iconName="subscribe" classNames="plus-icon" }}
+                    </button>
+                </div>
                 <div class="dashboard__message-info">Ви не обрали жодного кандидата</div>
             </div>
             <div class="dashboard__section sent-offers">
-                <div class="h2 dashboard__section-title">Надіслані пропозиції</div>
+                    <div class="h2 dashboard__section-title">Надіслані пропозиції</div>
                 <div class="dashboard__message-info">У вас немає надісланих пропозицій</div>
             </div>
             <div class="dashboard__section added-vacancies">
-                <div class="h2 dashboard__section-title">Доданi вакансії</div>
+                <div class="dashboard__section-head">
+                    <div class="h2 dashboard__section-title">Доданi вакансії</div>
+                    <button class="the-button dashboard__section-button">
+                        Додати вакансію
+                        {{> icon iconName="subscribe_white" classNames="plus-icon" }}
+                    </button>
+                </div>
                 <div class="dashboard__message-info">У вас немає доданих вакансій</div>
             </div>
             <div class="dashboard__section scheduled-interviews">
-                <div class="h2 dashboard__section-title">Заплановані iнтерв`ю</div>
+                <div class="dashboard__section-head">
+                    <div class="h2 dashboard__section-title">Заплановані iнтерв`ю</div>
+                    <button class="the-button dashboard__section-button">
+                        Запланувати
+                        {{> icon iconName="subscribe_white" classNames="plus-icon" }}
+                    </button>
+                </div>
                 <div class="dashboard__message-info">У вас немає запланованих інтерв'ю</div>
             </div>
         </section>

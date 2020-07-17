@@ -5,32 +5,29 @@
     padding-top: 60px;
   }
 
-  .candidates-settings {
+  &__recruiter-link {
+    position: absolute;
+    top: -10px;
+    right: 0;
+    text-decoration: none;
+    padding: 13px 36px;
 
-    &__recruiter-link {
-      position: absolute;
-      top: -10px;
-      right: 0;
-      text-decoration: none;
-      padding: 13px 36px;
+    @media(max-width: 991px) {
+      padding: 10px 20px;
+      font-size: 14px;
+      line-height: 1.2;
+      top: 0;
+    }
 
-      @media(max-width: 991px) {
-        padding: 10px 20px;
-        font-size: 14px;
-        line-height: 1.2;
-        top: 0;
-      }
+    @media(max-width: 575px) {
+      padding: 10px;
+      font-size: 12px;
+      line-height: 1.25;
+    }
 
-      @media(max-width: 575px) {
-        padding: 10px;
-        font-size: 12px;
-        line-height: 1.25;
-      }
-
-      &:hover {
-        background-color: $blue;
-        color: #fff;
-      }
+    &:hover {
+      background-color: $blue;
+      color: #fff;
     }
   }
 
@@ -54,8 +51,9 @@
   }
 
   &__aside {
+
     @media(max-width: 1099px) {
-      margin-bottom: 1px;
+      margin-bottom: 18px;
     }
   }
 
@@ -149,16 +147,5 @@
       line-height: 1.2;
       padding: 14px 36px;
     }
-  }
-}
-
-.e-settings {
-  width: 20px;
-  height: 20px;
-  fill: none;
-  stroke: $lightgray;
-
-  &_trash {
-    stroke: $red;
   }
 }
