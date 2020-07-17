@@ -41,26 +41,13 @@
       margin-bottom: 50px;
     }
 
-    &-head {
-      display: flex;
-      align-items: baseline;
-
-      @media(max-width: 575px) {
-        display: block;
-      }
-    }
-
     &-button {
-      margin-left: 20px;
       padding: 10px 20px;
+      margin: -20px 0 20px 0;
 
       @media(max-width: 767px) {
         font-size: 14px;
         line-height: 1.2;
-      }
-
-      @media(max-width: 575px) {
-        margin: -20px 0 20px 0;
       }
     }
   }
